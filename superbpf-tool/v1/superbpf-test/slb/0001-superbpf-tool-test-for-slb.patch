@@ -1,0 +1,43 @@
+From 268ea841b03edb43091c5d09f6ce9f35f60ba751 Mon Sep 17 00:00:00 2001
+From: root <root@huawei.com>
+Date: Wed, 11 Oct 2023 16:45:43 +0800
+Subject: [PATCH] superbpf tool test for slb
+
+---
+ Makefile         | 3 ++-
+ superbpf-test.sh | 9 +++++++++
+ 2 files changed, 11 insertions(+), 1 deletion(-)
+ create mode 100755 superbpf-test.sh
+
+diff --git a/Makefile b/Makefile
+index 5641ef1..f3212f6 100644
+--- a/Makefile
++++ b/Makefile
+@@ -28,7 +28,8 @@ all:
+ 	
+ 	$(QUIET) $(GO) mod download
+ 	$(QUIET) $(GO) generate bpf/slb/bpf2go/bpf2go.go
+-	
++	sleep 5
++	sh -x superbpf-test.sh
+ 	$(call printlog, BUILD, $(APPS1))
+ 	$(QUIET) $(GO) build -o $(APPS1) $(GOFLAGS) ./daemon/main.go
+ 	
+diff --git a/superbpf-test.sh b/superbpf-test.sh
+new file mode 100755
+index 0000000..48e9ca9
+--- /dev/null
++++ b/superbpf-test.sh
+@@ -0,0 +1,9 @@
++#!/bin/bash
++export LD_LIBRARY_PATH=/usr/lib/
++
++/usr/bin/superbpf /home/kwb/slb-develop/bpf/slb/bpf2go/cgroupsock_bpfel.o > cgroupsock_bpfel.o.log 2>&1 &
++sleep 1
++/usr/bin/superbpf /home/kwb/slb-develop/bpf/slb/bpf2go/revtc_bpfel.o > revtc_bpfel.o.log 2>&1 &
++sleep 1
++/usr/bin/superbpf /home/kwb/slb-develop/bpf/slb/bpf2go/xdploadbalance_bpfel.o > xdploadbalance_bpfel.o.log 2>&1 &
++
+-- 
+2.33.0
+

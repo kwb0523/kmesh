@@ -1,0 +1,30 @@
+Optimized basic blocks: 
+Origin:
+Block 22
+insn[i] : code            dst_reg src_reg off        imm
+     22 : BPF_MOV_K       1       0       0x0        0x0
+     23 : BPF_STX_MEM_W   10      1       0xfff8     0x0
+     24 : BPF_MOV_X       2       10      0x0        0x0
+     25 : BPF_ADD_K       2       0       0x0        0xffffffd8
+
+     26 : BPF_LD_IMM_DW   1       0       0x0        0x0
+    Reloc: map_idx: 4
+     27 : NOP             0       0       0x0        0x0
+------------------------------------------------------------
+Live-out regs: 2 6 
+Rewrite:
+Block 22
+insn[i] : code            dst_reg src_reg off        imm
+     22 : BPF_ST_MEM_W    10      0       0xfff8     0x0
+    Reloc: map_idx: 24875744
+     23 : BPF_MOV_X       2       10      0x0        0x0
+     24 : BPF_ADD_K       2       0       0x0        0xffffffd8
+
+     25 : BPF_LD_IMM_DW   1       0       0x0        0x0
+    Reloc: map_idx: 4
+     26 : NOP             0       0       0x0        0x0
+------------------------------------------------------------
+Number of instructions: origin: 48, rewrite: 47
+Instructions execution time: origin: 28.4 ns , rewrite: 28.2 ns
+Total running time: 0 h, 0 min, 1.4444 s.
+

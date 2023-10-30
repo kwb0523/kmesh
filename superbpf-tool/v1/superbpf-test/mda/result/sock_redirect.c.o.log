@@ -1,0 +1,39 @@
+
+----------Optimizing code from file 'sock_redirect.c.o'----------
+Optimizing block 0...
+Synthesis time: 0 h, 0 min, 0.067884 s.
+Synthesis time: 0 h, 0 min, 0.060752 s.
+Synthesis time: 0 h, 0 min, 0.247674 s.
+Synthesis time: 0 h, 0 min, 0.025395 s.
+Synthesis time: 0 h, 0 min, 0.231665 s.
+Synthesis time: 0 h, 0 min, 0.062134 s.
+Synthesis time: 0 h, 0 min, 0.150827 s.
+Synthesis time: 0 h, 0 min, 0.541425 s.
+Synthesis time: 0 h, 0 min, 0.239781 s.
+Synthesis time: 0 h, 0 min, 0.531686 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 15...
+Optimizing block 16...
+Optimizing block 17...
+Synthesis time: 0 h, 0 min, 0.000106 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 20...
+Synthesis time: 0 h, 0 min, 0.000701 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 23...
+Synthesis time: 0 h, 0 min, 8.1e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Number of instructions: origin: 25, rewrite: 25
+Total running time: 0 h, 0 min, 2.52177 s.
+
+---
+Optimized object file has written to file sock_redirect.c_rewrite.o
+Optimization report file has written to file sock_redirect.c_opt_report.txt

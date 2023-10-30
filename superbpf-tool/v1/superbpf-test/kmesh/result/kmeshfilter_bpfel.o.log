@@ -1,0 +1,840 @@
+
+----------Optimizing code from file '/root/code/github/superbpf-test/kmesh/bpf/kmesh/bpf2go/kmeshfilter_bpfel.o'----------
+Optimizing block 0...
+Synthesis time: 0 h, 0 min, 0.060206 s.
+Synthesis time: 0 h, 0 min, 0.285339 s.
+Synthesis time: 0 h, 0 min, 0.091121 s.
+Synthesis time: 0 h, 0 min, 0.06985 s.
+Synthesis time: 0 h, 0 min, 0.060603 s.
+Synthesis time: 0 h, 0 min, 0.082979 s.
+Synthesis time: 0 h, 0 min, 0.175214 s.
+Synthesis time: 0 h, 0 min, 0.233807 s.
+Synthesis time: 0 h, 0 min, 0.277834 s.
+Synthesis time: 0 h, 0 min, 0.270698 s.
+Synthesis time: 0 h, 0 min, 0.651059 s.
+Synthesis time: 0 h, 0 min, 0.000121 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 16...
+Synthesis time: 0 h, 0 min, 1.19257 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 22...
+Optimizing block 23...
+Synthesis time: 0 h, 0 min, 0.000382 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 25...
+Optimizing block 27...
+Synthesis time: 0 h, 0 min, 8.2e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 29...
+Synthesis time: 0 h, 0 min, 0.015548 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 33...
+Synthesis time: 0 h, 0 min, 0.004115 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 37...
+Optimizing block 38...
+Optimizing block 39...
+Optimizing block 40...
+Synthesis time: 0 h, 0 min, 0.043467 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 44...
+Synthesis time: 0 h, 0 min, 0.000525 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 46...
+Optimizing block 48...
+Synthesis time: 0 h, 0 min, 7.8e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 49...
+Optimizing block 50...
+Synthesis time: 0 h, 0 min, 1e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 52...
+Synthesis time: 0 h, 0 min, 0.004834 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 56...
+Optimizing block 57...
+Synthesis time: 0 h, 0 min, 0.000117 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 59...
+Optimizing block 60...
+Synthesis time: 0 h, 0 min, 0.035649 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 65...
+Synthesis time: 0 h, 0 min, 0.004768 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 69...
+Optimizing block 70...
+Optimizing block 71...
+Synthesis time: 0 h, 0 min, 0.042116 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 75...
+Synthesis time: 0 h, 0 min, 0.000365 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 76...
+Synthesis time: 0 h, 0 min, 0.000138 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 78...
+Synthesis time: 0 h, 0 min, 6.4e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 80...
+Optimizing block 81...
+Optimizing block 83...
+Optimizing block 84...
+Synthesis time: 0 h, 0 min, 0.03629 s.
+Synthesis time: 0 h, 0 min, 0.025133 s.
+Synthesis time: 0 h, 0 min, 0.057656 s.
+Synthesis time: 0 h, 0 min, 0.058544 s.
+Synthesis time: 0 h, 0 min, 0.05812 s.
+Synthesis time: 0 h, 0 min, 0.068035 s.
+Synthesis time: 0 h, 0 min, 0.071426 s.
+Synthesis time: 0 h, 0 min, 0.059487 s.
+Synthesis time: 0 h, 0 min, 0.055882 s.
+Synthesis time: 0 h, 0 min, 0.06046 s.
+Synthesis time: 0 h, 0 min, 0.057025 s.
+Synthesis time: 0 h, 0 min, 0.056836 s.
+Synthesis time: 0 h, 0 min, 0.056544 s.
+Synthesis time: 0 h, 0 min, 0.056992 s.
+Synthesis time: 0 h, 0 min, 0.056742 s.
+Synthesis time: 0 h, 0 min, 0.056586 s.
+Synthesis time: 0 h, 0 min, 0.056467 s.
+Synthesis time: 0 h, 0 min, 0.056436 s.
+Synthesis time: 0 h, 0 min, 0.056344 s.
+Synthesis time: 0 h, 0 min, 0.056237 s.
+Synthesis time: 0 h, 0 min, 0.056349 s.
+Synthesis time: 0 h, 0 min, 0.056699 s.
+Synthesis time: 0 h, 0 min, 0.057682 s.
+Synthesis time: 0 h, 0 min, 0.058686 s.
+Synthesis time: 0 h, 0 min, 0.059011 s.
+Synthesis time: 0 h, 0 min, 0.059386 s.
+Synthesis time: 0 h, 0 min, 0.058303 s.
+Synthesis time: 0 h, 0 min, 0.05942 s.
+Synthesis time: 0 h, 0 min, 0.058113 s.
+Synthesis time: 0 h, 0 min, 0.056905 s.
+Synthesis time: 0 h, 0 min, 0.061227 s.
+Synthesis time: 0 h, 0 min, 0.057491 s.
+Synthesis time: 0 h, 0 min, 0.057106 s.
+Synthesis time: 0 h, 0 min, 0.057098 s.
+Synthesis time: 0 h, 0 min, 0.058494 s.
+Synthesis time: 0 h, 0 min, 0.103633 s.
+Synthesis time: 0 h, 0 min, 0.253564 s.
+Synthesis time: 0 h, 0 min, 0.148688 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 126...
+Synthesis time: 0 h, 0 min, 0.00415 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 130...
+Optimizing block 131...
+Optimizing block 132...
+Optimizing block 133...
+Synthesis time: 0 h, 0 min, 0.245214 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 138...
+Synthesis time: 0 h, 0 min, 0.000344 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 140...
+Optimizing block 142...
+Synthesis time: 0 h, 0 min, 8.2e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 144...
+Synthesis time: 0 h, 0 min, 0.238122 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 149...
+Optimizing block 150...
+Optimizing block 152...
+Synthesis time: 0 h, 0 min, 0.000798 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 155...
+Optimizing block 156...
+Synthesis time: 0 h, 0 min, 0.464346 s.
+Synthesis time: 0 h, 0 min, 0.3156 s.
+Synthesis time: 0 h, 0 min, 0.065352 s.
+Synthesis time: 0 h, 0 min, 0.11545 s.
+Synthesis time: 0 h, 0 min, 0.069823 s.
+Synthesis time: 0 h, 0 min, 1.49133 s.
+Synthesis time: 0 h, 0 min, 1.54248 s.
+Synthesis time: 0 h, 0 min, 0.467338 s.
+Synthesis time: 0 h, 0 min, 0.08291 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 169...
+Synthesis time: 0 h, 0 min, 0.468538 s.
+Synthesis time: 0 h, 0 min, 0.526763 s.
+Synthesis time: 0 h, 0 min, 0.184532 s.
+Synthesis time: 0 h, 0 min, 0.101846 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 178...
+Synthesis time: 0 h, 0 min, 0.000151 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 180...
+Synthesis time: 0 h, 0 min, 0.000226 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 183...
+Synthesis time: 0 h, 0 min, 2.2e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 186...
+Synthesis time: 0 h, 0 min, 1.4e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 188...
+Synthesis time: 0 h, 0 min, 0.10211 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 193...
+Synthesis time: 0 h, 0 min, 0.003535 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 197...
+Optimizing block 198...
+Optimizing block 199...
+Optimizing block 201...
+Optimizing block 202...
+Synthesis time: 0 h, 0 min, 0.045532 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 206...
+Optimizing block 207...
+Optimizing block 208...
+Synthesis time: 0 h, 0 min, 0.067977 s.
+Synthesis time: 0 h, 0 min, 0.354864 s.
+Synthesis time: 0 h, 0 min, 0.086989 s.
+Synthesis time: 0 h, 0 min, 0.077166 s.
+Synthesis time: 0 h, 0 min, 0.207704 s.
+Synthesis time: 0 h, 0 min, 0.16028 s.
+Synthesis time: 0 h, 0 min, 0.10958 s.
+Synthesis time: 0 h, 0 min, 0.276762 s.
+Synthesis time: 0 h, 0 min, 0.1979 s.
+Synthesis time: 0 h, 0 min, 0.096717 s.
+Synthesis time: 0 h, 0 min, 0.075461 s.
+Synthesis time: 0 h, 0 min, 0.074682 s.
+Synthesis time: 0 h, 0 min, 0.078246 s.
+Synthesis time: 0 h, 0 min, 0.076965 s.
+Synthesis time: 0 h, 0 min, 0.074076 s.
+Synthesis time: 0 h, 0 min, 0.072663 s.
+Synthesis time: 0 h, 0 min, 0.073747 s.
+Synthesis time: 0 h, 0 min, 0.070607 s.
+Synthesis time: 0 h, 0 min, 0.071887 s.
+Synthesis time: 0 h, 0 min, 0.06631 s.
+Synthesis time: 0 h, 0 min, 0.077792 s.
+Synthesis time: 0 h, 0 min, 0.077991 s.
+Synthesis time: 0 h, 0 min, 0.087117 s.
+Synthesis time: 0 h, 0 min, 0.071844 s.
+Synthesis time: 0 h, 0 min, 0.088646 s.
+Synthesis time: 0 h, 0 min, 0.063959 s.
+Synthesis time: 0 h, 0 min, 0.072069 s.
+Synthesis time: 0 h, 0 min, 0.077607 s.
+Synthesis time: 0 h, 0 min, 0.070929 s.
+Synthesis time: 0 h, 0 min, 0.074991 s.
+Synthesis time: 0 h, 0 min, 0.074091 s.
+Synthesis time: 0 h, 0 min, 0.076617 s.
+Synthesis time: 0 h, 0 min, 0.075411 s.
+Synthesis time: 0 h, 0 min, 0.085385 s.
+Synthesis time: 0 h, 0 min, 0.075023 s.
+Synthesis time: 0 h, 0 min, 0.07924 s.
+Synthesis time: 0 h, 0 min, 0.076757 s.
+Synthesis time: 0 h, 0 min, 0.077792 s.
+Synthesis time: 0 h, 0 min, 0.086427 s.
+Synthesis time: 0 h, 0 min, 0.077876 s.
+Synthesis time: 0 h, 0 min, 0.079088 s.
+Synthesis time: 0 h, 0 min, 0.078871 s.
+Synthesis time: 0 h, 0 min, 0.074034 s.
+Synthesis time: 0 h, 0 min, 0.097075 s.
+Synthesis time: 0 h, 0 min, 0.106682 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 257...
+Synthesis time: 0 h, 0 min, 0.004087 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 261...
+Synthesis time: 0 h, 0 min, 0.001312 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 265...
+Optimizing block 266...
+Optimizing block 267...
+Optimizing block 268...
+Synthesis time: 0 h, 0 min, 0.018815 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 272...
+Synthesis time: 0 h, 0 min, 0.000172 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 275...
+Synthesis time: 0 h, 0 min, 0.007117 s.
+Synthesis time: 0 h, 0 min, 0.000168 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 281...
+Synthesis time: 0 h, 0 min, 0.001035 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 285...
+Optimizing block 286...
+Optimizing block 287...
+Optimizing block 288...
+Synthesis time: 0 h, 0 min, 0.017335 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 292...
+Synthesis time: 0 h, 0 min, 0.000153 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 295...
+Optimizing block 296...
+Synthesis time: 0 h, 0 min, 0.09297 s.
+Synthesis time: 0 h, 0 min, 0.12691 s.
+Synthesis time: 0 h, 0 min, 0.269047 s.
+Synthesis time: 0 h, 0 min, 1.4e-05 s.
+Synthesis time: 0 h, 0 min, 1.3e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 306...
+Synthesis time: 0 h, 0 min, 9.4e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 309...
+Synthesis time: 0 h, 0 min, 0.000393 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 312...
+Synthesis time: 0 h, 0 min, 0.014861 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 316...
+Synthesis time: 0 h, 0 min, 1.4e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 320...
+Optimizing block 321...
+Optimizing block 322...
+Optimizing block 323...
+Synthesis time: 0 h, 0 min, 0.013927 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 327...
+Optimizing block 328...
+Synthesis time: 0 h, 0 min, 0.833127 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 333...
+Synthesis time: 0 h, 0 min, 0.064329 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 338...
+Synthesis time: 0 h, 0 min, 1.5e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 342...
+Optimizing block 343...
+Optimizing block 344...
+Optimizing block 345...
+Synthesis time: 0 h, 0 min, 0.00441 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 348...
+Synthesis time: 0 h, 0 min, 0.001144 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 352...
+Optimizing block 353...
+Optimizing block 354...
+Synthesis time: 0 h, 0 min, 0.018559 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 358...
+Synthesis time: 0 h, 0 min, 1.4e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 359...
+Synthesis time: 0 h, 0 min, 0.200134 s.
+Synthesis time: 0 h, 0 min, 0.24311 s.
+Synthesis time: 0 h, 0 min, 0.024265 s.
+Synthesis time: 0 h, 0 min, 0.076837 s.
+Synthesis time: 0 h, 0 min, 0.023974 s.
+Synthesis time: 0 h, 0 min, 0.05389 s.
+Synthesis time: 0 h, 0 min, 0.037189 s.
+Synthesis time: 0 h, 0 min, 0.043272 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 374...
+Synthesis time: 0 h, 0 min, 0.507018 s.
+Synthesis time: 0 h, 0 min, 0.239094 s.
+Synthesis time: 0 h, 0 min, 0.08524 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 381...
+Optimizing block 382...
+Optimizing block 384...
+Synthesis time: 0 h, 0 min, 0.000749 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 387...
+Optimizing block 388...
+Synthesis time: 0 h, 0 min, 1.3e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 394...
+Synthesis time: 0 h, 0 min, 0.000105 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 396...
+Synthesis time: 0 h, 0 min, 0.000115 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 399...
+Synthesis time: 0 h, 0 min, 1.7e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 402...
+Synthesis time: 0 h, 0 min, 1.1e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 403...
+Optimizing block 404...
+Synthesis time: 0 h, 0 min, 1.2e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 408...
+Optimizing block 409...
+Number of instructions: origin: 410, rewrite: 378
+Total running time: 0 h, 0 min, 24.2924 s.
+Optimizing block 0...
+Synthesis time: 0 h, 0 min, 0.034674 s.
+Synthesis time: 0 h, 0 min, 0.022157 s.
+Synthesis time: 0 h, 0 min, 0.057228 s.
+Synthesis time: 0 h, 0 min, 0.057557 s.
+Synthesis time: 0 h, 0 min, 0.059998 s.
+Synthesis time: 0 h, 0 min, 0.057157 s.
+Synthesis time: 0 h, 0 min, 0.059988 s.
+Synthesis time: 0 h, 0 min, 0.056035 s.
+Synthesis time: 0 h, 0 min, 0.054305 s.
+Synthesis time: 0 h, 0 min, 0.055031 s.
+Synthesis time: 0 h, 0 min, 0.054228 s.
+Synthesis time: 0 h, 0 min, 0.055423 s.
+Synthesis time: 0 h, 0 min, 0.055009 s.
+Synthesis time: 0 h, 0 min, 0.055508 s.
+Synthesis time: 0 h, 0 min, 0.054645 s.
+Synthesis time: 0 h, 0 min, 0.057574 s.
+Synthesis time: 0 h, 0 min, 0.065002 s.
+Synthesis time: 0 h, 0 min, 0.058264 s.
+Synthesis time: 0 h, 0 min, 0.059626 s.
+Synthesis time: 0 h, 0 min, 0.058604 s.
+Synthesis time: 0 h, 0 min, 0.058641 s.
+Synthesis time: 0 h, 0 min, 0.061161 s.
+Synthesis time: 0 h, 0 min, 0.058417 s.
+Synthesis time: 0 h, 0 min, 0.062249 s.
+Synthesis time: 0 h, 0 min, 0.056073 s.
+Synthesis time: 0 h, 0 min, 0.056747 s.
+Synthesis time: 0 h, 0 min, 0.058674 s.
+Synthesis time: 0 h, 0 min, 0.057877 s.
+Synthesis time: 0 h, 0 min, 0.057795 s.
+Synthesis time: 0 h, 0 min, 0.264258 s.
+Synthesis time: 0 h, 0 min, 0.285734 s.
+Synthesis time: 0 h, 0 min, 0.286545 s.
+Synthesis time: 0 h, 0 min, 0.27299 s.
+Synthesis time: 0 h, 0 min, 0.084448 s.
+Synthesis time: 0 h, 0 min, 0.072305 s.
+Synthesis time: 0 h, 0 min, 0.118019 s.
+Synthesis time: 0 h, 0 min, 0.11385 s.
+Synthesis time: 0 h, 0 min, 0.222332 s.
+Synthesis time: 0 h, 0 min, 0.264468 s.
+Synthesis time: 0 h, 0 min, 0.271753 s.
+Synthesis time: 0 h, 0 min, 0.60034 s.
+Synthesis time: 0 h, 0 min, 0.002526 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 47...
+Synthesis time: 0 h, 0 min, 1.23626 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 53...
+Optimizing block 54...
+Synthesis time: 0 h, 0 min, 0.000352 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 56...
+Optimizing block 58...
+Synthesis time: 0 h, 0 min, 8.2e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 60...
+Optimizing block 61...
+Synthesis time: 0 h, 0 min, 0.004203 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 65...
+Optimizing block 66...
+Synthesis time: 0 h, 0 min, 0.011209 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 70...
+Synthesis time: 0 h, 0 min, 0.00354 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 74...
+Optimizing block 75...
+Optimizing block 76...
+Optimizing block 77...
+Synthesis time: 0 h, 0 min, 0.04251 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 81...
+Synthesis time: 0 h, 0 min, 0.000315 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 83...
+Synthesis time: 0 h, 0 min, 0.273187 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 88...
+Optimizing block 90...
+Synthesis time: 0 h, 0 min, 0.000108 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 92...
+Optimizing block 93...
+Synthesis time: 0 h, 0 min, 0.07332 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 98...
+Synthesis time: 0 h, 0 min, 0.00472 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 102...
+Optimizing block 103...
+Optimizing block 104...
+Optimizing block 106...
+Synthesis time: 0 h, 0 min, 8.6e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 108...
+Optimizing block 109...
+Synthesis time: 0 h, 0 min, 0.437351 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 114...
+Synthesis time: 0 h, 0 min, 0.000373 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 116...
+Synthesis time: 0 h, 0 min, 0.00073 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 119...
+Synthesis time: 0 h, 0 min, 0.068153 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 124...
+Synthesis time: 0 h, 0 min, 0.004337 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 128...
+Optimizing block 129...
+Optimizing block 130...
+Optimizing block 131...
+Synthesis time: 0 h, 0 min, 0.044601 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 135...
+Optimizing block 136...
+Synthesis time: 0 h, 0 min, 0.000136 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 139...
+Synthesis time: 0 h, 0 min, 0.001655 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 142...
+Synthesis time: 0 h, 0 min, 0.018121 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 146...
+Synthesis time: 0 h, 0 min, 0.064371 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 151...
+Synthesis time: 0 h, 0 min, 0.00398 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 155...
+Optimizing block 156...
+Optimizing block 157...
+Synthesis time: 0 h, 0 min, 0.042687 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 161...
+Optimizing block 162...
+Synthesis time: 0 h, 0 min, 0.075294 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 167...
+Synthesis time: 0 h, 0 min, 0.000174 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 169...
+Synthesis time: 0 h, 0 min, 0.01836 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 173...
+Synthesis time: 0 h, 0 min, 0.063241 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 178...
+Synthesis time: 0 h, 0 min, 0.004177 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 182...
+Optimizing block 183...
+Optimizing block 184...
+Synthesis time: 0 h, 0 min, 0.043283 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 188...
+Optimizing block 189...
+Synthesis time: 0 h, 0 min, 0.07601 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 194...
+Synthesis time: 0 h, 0 min, 0.000132 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 196...
+Synthesis time: 0 h, 0 min, 0.018021 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 200...
+Synthesis time: 0 h, 0 min, 0.063688 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 205...
+Synthesis time: 0 h, 0 min, 0.004008 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 209...
+Optimizing block 210...
+Optimizing block 211...
+Synthesis time: 0 h, 0 min, 0.04606 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 215...
+Optimizing block 216...
+Synthesis time: 0 h, 0 min, 0.000793 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 220...
+Synthesis time: 0 h, 0 min, 0.001553 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 223...
+Optimizing block 225...
+Synthesis time: 0 h, 0 min, 0.00076 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 227...
+Optimizing block 228...
+Synthesis time: 0 h, 0 min, 4e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 230...
+Synthesis time: 0 h, 0 min, 0.558245 s.
+Synthesis time: 0 h, 0 min, 0.378076 s.
+Synthesis time: 0 h, 0 min, 1.26777 s.
+Synthesis time: 0 h, 0 min, 5.38589 s.
+Synthesis time: 0 h, 0 min, 2.23521 s.
+Synthesis time: 0 h, 0 min, 0.817168 s.
+Synthesis time: 0 h, 0 min, 0.827615 s.
+Synthesis time: 0 h, 0 min, 0.896291 s.
+Synthesis time: 0 h, 0 min, 9.32677 s.
+Synthesis time: 0 h, 0 min, 2.87218 s.
+Synthesis time: 0 h, 0 min, 25.8186 s.
+Synthesis time: 0 h, 0 min, 0.289871 s.
+Synthesis time: 0 h, 0 min, 0.029374 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 247...
+Synthesis time: 0 h, 0 min, 0.22104 s.
+Synthesis time: 0 h, 0 min, 0.317999 s.
+Synthesis time: 0 h, 0 min, 0.465511 s.
+Synthesis time: 0 h, 0 min, 0.607342 s.
+Synthesis time: 0 h, 0 min, 0.178722 s.
+Synthesis time: 0 h, 0 min, 0.133919 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 258...
+Synthesis time: 0 h, 0 min, 0.000115 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 260...
+Synthesis time: 0 h, 0 min, 0.041344 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 264...
+Optimizing block 266...
+Synthesis time: 0 h, 0 min, 0.000917 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 269...
+Synthesis time: 0 h, 0 min, 0.000108 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 272...
+Synthesis time: 0 h, 0 min, 0.000104 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 274...
+Synthesis time: 0 h, 0 min, 0.00089 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 278...
+Optimizing block 279...
+Number of instructions: origin: 280, rewrite: 273
+Total running time: 0 h, 1 min, 3.70508 s.
+
+---
+Optimized object file has written to file /root/code/github/superbpf-test/kmesh/bpf/kmesh/bpf2go/kmeshfilter_bpfel_rewrite.o
+Optimization report file has written to file /root/code/github/superbpf-test/kmesh/bpf/kmesh/bpf2go/kmeshfilter_bpfel_opt_report.txt

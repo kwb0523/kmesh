@@ -1,0 +1,125 @@
+
+----------Optimizing code from file '/home/kwb/slb-develop/bpf/slb/bpf2go/cgroupsock_bpfel.o'----------
+Optimizing block 0...
+Synthesis time: 0 h, 0 min, 0.018682 s.
+Synthesis time: 0 h, 0 min, 0.014488 s.
+Synthesis time: 0 h, 0 min, 0.013704 s.
+Synthesis time: 0 h, 0 min, 0.056592 s.
+Synthesis time: 0 h, 0 min, 0.009056 s.
+Synthesis time: 0 h, 0 min, 0.000903 s.
+Synthesis time: 0 h, 0 min, 0.980487 s.
+Synthesis time: 0 h, 0 min, 5.36287 s.
+Synthesis time: 0 h, 0 min, 0.021454 s.
+Synthesis time: 0 h, 0 min, 0.01573 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 26...
+Optimizing block 27...
+Synthesis time: 0 h, 0 min, 0.000123 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 29...
+Synthesis time: 0 h, 0 min, 0.000172 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 34...
+Optimizing block 35...
+Synthesis time: 0 h, 0 min, 0.00019 s.
+Synthesis time: 0 h, 0 min, 0.000203 s.
+Synthesis time: 0 h, 0 min, 0.084522 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 47...
+Synthesis time: 0 h, 0 min, 0.000186 s.
+Synthesis time: 0 h, 0 min, 0.000217 s.
+Synthesis time: 0 h, 0 min, 0.876743 s.
+Synthesis time: 0 h, 0 min, 1.12218 s.
+Synthesis time: 0 h, 0 min, 5.44963 s.
+Synthesis time: 0 h, 0 min, 4.33805 s.
+Synthesis time: 0 h, 1 min, 57.7717 s.
+Synthesis time: 0 h, 2 min, 49.6802 s.
+Synthesis time: 0 h, 0 min, 12.4118 s.
+Synthesis time: 0 h, 0 min, 1.33677 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 68...
+Optimizing block 69...
+Synthesis time: 0 h, 0 min, 0.000354 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 72...
+Synthesis time: 0 h, 0 min, 0.000183 s.
+Synthesis time: 0 h, 0 min, 0.000157 s.
+Synthesis time: 0 h, 0 min, 1.17704 s.
+Synthesis time: 0 h, 0 min, 0.857224 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 87...
+Optimizing block 88...
+Optimizing block 89...
+Optimizing block 90...
+Synthesis time: 0 h, 0 min, 0.000163 s.
+Synthesis time: 0 h, 0 min, 0.000185 s.
+Synthesis time: 0 h, 0 min, 1.59884 s.
+Synthesis time: 0 h, 0 min, 0.574347 s.
+Synthesis time: 0 h, 0 min, 0.094217 s.
+Synthesis time: 0 h, 0 min, 0.000167 s.
+Synthesis time: 0 h, 0 min, 0.000165 s.
+Synthesis time: 0 h, 0 min, 0.297404 s.
+Synthesis time: 0 h, 0 min, 0.137492 s.
+Synthesis time: 0 h, 0 min, 0.000207 s.
+Synthesis time: 0 h, 0 min, 0.000209 s.
+Synthesis time: 0 h, 0 min, 3.77297 s.
+Synthesis time: 0 h, 0 min, 6.79254 s.
+Synthesis time: 0 h, 0 min, 0.002438 s.
+Synthesis time: 0 h, 0 min, 0.097394 s.
+Synthesis time: 0 h, 0 min, 0.248175 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 132...
+Optimizing block 133...
+Synthesis time: 0 h, 0 min, 0.000327 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 136...
+Synthesis time: 0 h, 0 min, 0.000196 s.
+Synthesis time: 0 h, 0 min, 0.000162 s.
+Synthesis time: 0 h, 0 min, 1.18656 s.
+Synthesis time: 0 h, 0 min, 0.743948 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 151...
+Optimizing block 152...
+Optimizing block 153...
+Synthesis time: 0 h, 0 min, 0.000158 s.
+Synthesis time: 0 h, 0 min, 0.000199 s.
+Synthesis time: 0 h, 0 min, 1.25851 s.
+Synthesis time: 0 h, 0 min, 0.591047 s.
+Synthesis time: 0 h, 0 min, 0.06413 s.
+Synthesis time: 0 h, 0 min, 0.000169 s.
+Synthesis time: 0 h, 0 min, 0.000192 s.
+Synthesis time: 0 h, 0 min, 0.097973 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 175...
+Synthesis time: 0 h, 0 min, 3.4e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Number of instructions: origin: 177, rewrite: 113
+Total running time: 0 h, 5 min, 39.5553 s.
+
+---
+Optimized object file has written to file /home/kwb/slb-develop/bpf/slb/bpf2go/cgroupsock_bpfel_rewrite.o
+Optimization report file has written to file /home/kwb/slb-develop/bpf/slb/bpf2go/cgroupsock_bpfel_opt_report.txt

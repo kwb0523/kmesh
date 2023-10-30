@@ -1,0 +1,159 @@
+From 9f37282d379a579f0f3313894393b5a43164c5bc Mon Sep 17 00:00:00 2001
+From: kongweibin <kongweibin2@huawei.com>
+Date: Sat, 28 Oct 2023 18:08:08 +0800
+Subject: [PATCH] adapt map define for libbpf-1.0+
+
+---
+ oncn-mda/cli_src/func/switch.c     | 13 +++--
+ oncn-mda/include/mesh_accelerate.h | 86 +++++++++++++++---------------
+ 2 files changed, 52 insertions(+), 47 deletions(-)
+
+diff --git a/oncn-mda/cli_src/func/switch.c b/oncn-mda/cli_src/func/switch.c
+index 2ee696f..ca25258 100644
+--- a/oncn-mda/cli_src/func/switch.c
++++ b/oncn-mda/cli_src/func/switch.c
+@@ -81,7 +81,7 @@ static struct bpf_object* get_program_object(struct mesh_prog_info* const prog_i
+ 		return NULL;
+ 	}
+ 
+-	struct bpf_object* obj = bpf_object__open_xattr(prog_info->xattr);
++	struct bpf_object* obj = bpf_object__open_file(prog_info->xattr->file, NULL);
+ 	if (obj == NULL) {
+ 		macli_log(ERR, "can not open bpf program, path:%s, errno:%d\n",
+ 				  prog_info->xattr->file, errno);
+@@ -94,7 +94,7 @@ static int set_program_type(const struct mesh_prog_info* const prog_info, const
+ {
+ 	enum bpf_prog_type prog_type = prog_info->xattr->prog_type;
+ 	enum bpf_attach_type expected_attach_type = prog_info->attach_type;
+-	struct bpf_program* pos = bpf_program__next(NULL, obj);
++	struct bpf_program* pos = bpf_object__next_program(obj, NULL);
+ 	if (pos == NULL) {
+ 		macli_log(ERR, "obj:%s not contain a ebpf program!\n", prog_info->xattr->file);
+ 		return FAILED;
+@@ -127,7 +127,7 @@ static int pinned_program_file(const struct mesh_prog_info* const prog_info, str
+ 		macli_log(ERR, "open bpf obj:%s failed! errno:%d\n", prog_info->xattr->file, errno);
+ 		return FAILED;
+ 	}
+-	prog = bpf_program__next(NULL, obj);
++	prog = bpf_object__next_program(obj, NULL);
+ 	if (!prog) {
+ 		macli_log(ERR, "object file:%s doesn't contain any bpf program\n", prog_info->xattr->file);
+ 		return FAILED;
+@@ -171,7 +171,12 @@ static int create_map(struct mesh_service_info* const fds)
+ {
+ 	for (unsigned int i = 0; i < MESH_MAP_NUM; ++i) {
+ 		if (fds->map_fds[i].fd == -1) {
+-			fds->map_fds[i].fd = bpf_create_map_xattr(fds->map_fds[i].xattr);
++			fds->map_fds[i].fd = bpf_map_create(fds->map_fds[i].xattr->map_type,
++			fds->map_fds[i].xattr->name,
++			fds->map_fds[i].xattr->key_size,
++			fds->map_fds[i].xattr->value_size,
++			fds->map_fds[i].xattr->max_entries,
++			NULL);
+ 			if (fds->map_fds[i].fd < 0) {
+ 				macli_log(ERR, "create %s failed! errno:%d\n", fds->map_fds[i].name, errno);
+ 				return FAILED;
+diff --git a/oncn-mda/include/mesh_accelerate.h b/oncn-mda/include/mesh_accelerate.h
+index fca25ba..dc60f75 100644
+--- a/oncn-mda/include/mesh_accelerate.h
++++ b/oncn-mda/include/mesh_accelerate.h
+@@ -64,53 +64,53 @@ do {													\
+ 
+ #define LOOPBACK_ADDR 16777343
+ 
+-struct bpf_map_def SEC("maps") SOCK_OPS_MAP_NAME = {
+-	.type			= BPF_MAP_TYPE_SOCKHASH,
+-	.key_size		= sizeof(struct sock_key),
+-	.value_size		= sizeof(int),
+-	.max_entries	= SKOPS_MAP_SIZE,
+-	.map_flags		= 0,
+-};
+-
+-struct bpf_map_def SEC("maps") SOCK_PARAM_MAP_NAME = {
+-	.type			= BPF_MAP_TYPE_ARRAY,
+-	.key_size		= sizeof(__u32),
+-	.value_size		= sizeof(struct sock_param),
+-	.max_entries	= 1,
+-};
+-
+-struct bpf_map_def SEC("maps") SOCK_OPS_PROXY_MAP_NAME = {
+-	.type			= BPF_MAP_TYPE_HASH,
+-	.key_size		= sizeof(struct sock_key),
+-	.value_size		= sizeof(struct sock_key),
+-	.max_entries	= SKOPS_MAP_SIZE,
+-	.map_flags		= 0,
+-};
++struct {
++	__uint(type, BPF_MAP_TYPE_SOCKHASH);
++	__uint(key_size, sizeof(struct sock_key));
++	__uint(value_size, sizeof(int));
++	__uint(max_entries, SKOPS_MAP_SIZE);
++	__uint(map_flags, 0);
++} SOCK_OPS_MAP_NAME SEC(".maps");
++
++struct {
++	__uint(type, BPF_MAP_TYPE_ARRAY);
++	__uint(key_size, sizeof(__u32));
++	__uint(value_size, sizeof(struct sock_param));
++	__uint(max_entries, 1);
++} SOCK_PARAM_MAP_NAME SEC(".maps");
++
++struct {
++	__uint(type, BPF_MAP_TYPE_HASH);
++	__uint(key_size, sizeof(struct sock_key));
++	__uint(value_size, sizeof(struct sock_key));
++	__uint(max_entries, SKOPS_MAP_SIZE);
++	__uint(map_flags, 0);
++} SOCK_OPS_PROXY_MAP_NAME SEC(".maps");
+ 
+ #if MDA_GID_UID_FILTER
+-struct bpf_map_def SEC("maps") SOCK_OPS_HELPER_MAP_NAME = {
+-	.type			= BPF_MAP_TYPE_HASH,
+-	.key_size		= sizeof(struct sock_key),
+-	.value_size		= sizeof(struct uid_gid_info),
+-	.max_entries	= SKOPS_MAP_SIZE,
+-	.map_flags		= 0,
+-};
++struct {
++	__uint(type, BPF_MAP_TYPE_HASH);
++	__uint(key_size, sizeof(struct sock_key));
++	__uint(value_size, sizeof(struct uid_gid_info));
++	__uint(max_entries, SKOPS_MAP_SIZE);
++	__uint(map_flags, 0);
++} SOCK_OPS_HELPER_MAP_NAME SEC(".maps");
+ #endif
+ 
+-struct bpf_map_def SEC("maps") SOCK_DUMP_MAP_I_NAME = {
+-	.type			= BPF_MAP_TYPE_QUEUE,
+-	.key_size		= 0,
+-	.value_size		= sizeof(struct dump_data),
+-	.max_entries	= DUMP_QUEUE_LENGTH,
+-	.map_flags		= 0,
+-};
+-
+-struct bpf_map_def SEC("maps") SOCK_DUMP_CPU_ARRAY_NAME = {
+-	.type			= BPF_MAP_TYPE_PERCPU_ARRAY,
+-	.key_size		= sizeof(__u32),
+-	.value_size		= sizeof(struct dump_data),
+-	.max_entries	= 1,
+-};
++struct {
++	__uint(type, BPF_MAP_TYPE_QUEUE);
++	__uint(key_size, 0);
++	__uint(value_size, sizeof(struct dump_data));
++	__uint(max_entries, DUMP_QUEUE_LENGTH);
++	__uint(map_flags, 0);
++} SOCK_DUMP_MAP_I_NAME SEC(".maps");
++
++struct {
++	__uint(type, BPF_MAP_TYPE_PERCPU_ARRAY);
++	__uint(key_size, sizeof(__u32));
++	__uint(value_size, sizeof(struct dump_data));
++	__uint(max_entries, 1);
++} SOCK_DUMP_CPU_ARRAY_NAME SEC(".maps");
+ 
+ #if MDA_LOOPBACK_ADDR
+ static inline void set_netns_cookie(void* const ctx, struct sock_key* const key)
+-- 
+2.33.0
+

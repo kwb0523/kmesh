@@ -1,0 +1,249 @@
+
+----------Optimizing code from file '/home/kwb/slb-develop/bpf/slb/bpf2go/revtc_bpfel.o'----------
+Optimizing block 0...
+Synthesis time: 0 h, 0 min, 0.013195 s.
+Synthesis time: 0 h, 0 min, 0.013272 s.
+Synthesis time: 0 h, 0 min, 0.046102 s.
+Synthesis time: 0 h, 0 min, 0.046134 s.
+Synthesis time: 0 h, 0 min, 0.046382 s.
+Synthesis time: 0 h, 0 min, 0.046281 s.
+Synthesis time: 0 h, 0 min, 0.04628 s.
+Synthesis time: 0 h, 0 min, 0.046696 s.
+Synthesis time: 0 h, 0 min, 0.046316 s.
+Synthesis time: 0 h, 0 min, 0.046295 s.
+Synthesis time: 0 h, 0 min, 0.046419 s.
+Synthesis time: 0 h, 0 min, 0.046537 s.
+Synthesis time: 0 h, 0 min, 0.045917 s.
+Synthesis time: 0 h, 0 min, 0.04411 s.
+Synthesis time: 0 h, 0 min, 0.048252 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 19...
+Synthesis time: 0 h, 0 min, 0.164539 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 24...
+Synthesis time: 0 h, 0 min, 0.000241 s.
+Synthesis time: 0 h, 0 min, 0.000112 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 30...
+Synthesis time: 0 h, 0 min, 0.000111 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 32...
+Synthesis time: 0 h, 0 min, 0.02319 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 36...
+Synthesis time: 0 h, 0 min, 0.620066 s.
+Synthesis time: 0 h, 0 min, 1.53481 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 42...
+Synthesis time: 0 h, 0 min, 0.000854 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 45...
+Synthesis time: 0 h, 0 min, 0.023012 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 49...
+Synthesis time: 0 h, 0 min, 1.2101 s.
+Synthesis time: 0 h, 0 min, 0.809202 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 55...
+Synthesis time: 0 h, 0 min, 0.142504 s.
+Synthesis time: 0 h, 0 min, 0.036971 s.
+Synthesis time: 0 h, 0 min, 0.579793 s.
+Synthesis time: 0 h, 0 min, 0.381839 s.
+Synthesis time: 0 h, 0 min, 0.906588 s.
+Synthesis time: 0 h, 0 min, 0.242316 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 69...
+Optimizing block 70...
+Synthesis time: 0 h, 0 min, 8.2e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 72...
+Synthesis time: 0 h, 0 min, 0.025332 s.
+Synthesis time: 0 h, 0 min, 0.228653 s.
+Synthesis time: 0 h, 0 min, 0.6375 s.
+Synthesis time: 0 h, 0 min, 2.67377 s.
+Synthesis time: 0 h, 0 min, 0.464196 s.
+Synthesis time: 0 h, 0 min, 0.171887 s.
+Synthesis time: 0 h, 0 min, 0.169687 s.
+Synthesis time: 0 h, 0 min, 0.075402 s.
+Synthesis time: 0 h, 0 min, 0.273387 s.
+Synthesis time: 0 h, 0 min, 0.299251 s.
+Synthesis time: 0 h, 0 min, 0.171197 s.
+Synthesis time: 0 h, 0 min, 0.119411 s.
+Synthesis time: 0 h, 0 min, 0.027601 s.
+Synthesis time: 0 h, 0 min, 0.212677 s.
+Synthesis time: 0 h, 0 min, 0.809312 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 97...
+Synthesis time: 0 h, 0 min, 0.540985 s.
+Synthesis time: 0 h, 0 min, 0.804874 s.
+Synthesis time: 0 h, 0 min, 1.87764 s.
+Synthesis time: 0 h, 0 min, 7.39714 s.
+Synthesis time: 0 h, 0 min, 0.897847 s.
+Synthesis time: 0 h, 0 min, 0.320742 s.
+Synthesis time: 0 h, 0 min, 0.326311 s.
+Synthesis time: 0 h, 0 min, 0.005995 s.
+Synthesis time: 0 h, 0 min, 0.001953 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 111...
+Synthesis time: 0 h, 0 min, 0.306194 s.
+Synthesis time: 0 h, 0 min, 0.303327 s.
+Synthesis time: 0 h, 0 min, 0.107327 s.
+Synthesis time: 0 h, 0 min, 0.130648 s.
+Synthesis time: 0 h, 0 min, 0.028137 s.
+Synthesis time: 0 h, 0 min, 0.000897 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 122...
+Synthesis time: 0 h, 0 min, 0.000225 s.
+Pass validation after generating 0 candidates.
+
+Optimizing block 125...
+Synthesis time: 0 h, 0 min, 0.042606 s.
+Synthesis time: 0 h, 0 min, 0.075772 s.
+Synthesis time: 0 h, 0 min, 0.042863 s.
+Synthesis time: 0 h, 0 min, 0.075878 s.
+Synthesis time: 0 h, 0 min, 0.042709 s.
+Synthesis time: 0 h, 0 min, 0.075614 s.
+Synthesis time: 0 h, 0 min, 0.042874 s.
+Synthesis time: 0 h, 0 min, 0.075619 s.
+Synthesis time: 0 h, 0 min, 0.042615 s.
+Synthesis time: 0 h, 0 min, 0.075486 s.
+Synthesis time: 0 h, 0 min, 0.04284 s.
+Synthesis time: 0 h, 0 min, 1.18411 s.
+Synthesis time: 0 h, 0 min, 1.44059 s.
+Synthesis time: 0 h, 0 min, 0.042147 s.
+Synthesis time: 0 h, 0 min, 2.62512 s.
+Synthesis time: 0 h, 0 min, 3.34137 s.
+Synthesis time: 0 h, 0 min, 1.65833 s.
+Synthesis time: 0 h, 0 min, 0.682568 s.
+Synthesis time: 0 h, 0 min, 0.059756 s.
+Synthesis time: 0 h, 0 min, 0.178351 s.
+Synthesis time: 0 h, 0 min, 0.227781 s.
+Synthesis time: 0 h, 0 min, 0.185773 s.
+Synthesis time: 0 h, 0 min, 0.124872 s.
+Synthesis time: 0 h, 0 min, 0.239802 s.
+Synthesis time: 0 h, 0 min, 0.433897 s.
+Synthesis time: 0 h, 0 min, 2.62831 s.
+Synthesis time: 0 h, 0 min, 2.98413 s.
+Synthesis time: 0 h, 0 min, 1.63074 s.
+Synthesis time: 0 h, 0 min, 0.695533 s.
+Synthesis time: 0 h, 0 min, 0.059019 s.
+Synthesis time: 0 h, 0 min, 0.177806 s.
+Synthesis time: 0 h, 0 min, 0.215493 s.
+Synthesis time: 0 h, 0 min, 0.186486 s.
+Synthesis time: 0 h, 0 min, 0.125037 s.
+Synthesis time: 0 h, 0 min, 0.241639 s.
+Synthesis time: 0 h, 0 min, 0.528069 s.
+Synthesis time: 0 h, 0 min, 2.83408 s.
+Synthesis time: 0 h, 0 min, 3.40518 s.
+Synthesis time: 0 h, 0 min, 1.78308 s.
+Synthesis time: 0 h, 0 min, 0.698451 s.
+Synthesis time: 0 h, 0 min, 0.058683 s.
+Synthesis time: 0 h, 0 min, 0.179699 s.
+Synthesis time: 0 h, 0 min, 0.214953 s.
+Synthesis time: 0 h, 0 min, 0.098515 s.
+Synthesis time: 0 h, 0 min, 0.131373 s.
+Synthesis time: 0 h, 0 min, 0.322191 s.
+Synthesis time: 0 h, 0 min, 2.59205 s.
+Synthesis time: 0 h, 0 min, 2.18598 s.
+Synthesis time: 0 h, 0 min, 3.75038 s.
+Synthesis time: 0 h, 0 min, 2.75665 s.
+Synthesis time: 0 h, 0 min, 1.76534 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 187...
+Optimizing block 188...
+Synthesis time: 0 h, 0 min, 0.001452 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 192...
+Optimizing block 193...
+Synthesis time: 0 h, 0 min, 0.00097 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 195...
+Synthesis time: 0 h, 0 min, 0.079601 s.
+Synthesis time: 0 h, 0 min, 0.069932 s.
+Synthesis time: 0 h, 0 min, 0.14964 s.
+Synthesis time: 0 h, 0 min, 0.104902 s.
+Synthesis time: 0 h, 0 min, 0.019972 s.
+Synthesis time: 0 h, 0 min, 0.017275 s.
+Synthesis time: 0 h, 0 min, 0.020008 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 206...
+Synthesis time: 0 h, 0 min, 0.015482 s.
+Synthesis time: 0 h, 0 min, 0.018126 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 212...
+Synthesis time: 0 h, 0 min, 0.066306 s.
+Synthesis time: 0 h, 0 min, 0.013825 s.
+Synthesis time: 0 h, 0 min, 0.011775 s.
+Synthesis time: 0 h, 0 min, 0.014084 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 220...
+Synthesis time: 0 h, 0 min, 0.031073 s.
+Synthesis time: 0 h, 0 min, 0.027041 s.
+Synthesis time: 0 h, 0 min, 0.032854 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 227...
+Synthesis time: 0 h, 0 min, 0.095204 s.
+Synthesis time: 0 h, 0 min, 0.014029 s.
+Synthesis time: 0 h, 0 min, 0.010249 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 234...
+Synthesis time: 0 h, 0 min, 7e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Number of instructions: origin: 236, rewrite: 225
+Total running time: 0 h, 1 min, 13.8811 s.
+
+---
+Optimized object file has written to file /home/kwb/slb-develop/bpf/slb/bpf2go/revtc_bpfel_rewrite.o
+Optimization report file has written to file /home/kwb/slb-develop/bpf/slb/bpf2go/revtc_bpfel_opt_report.txt
+36, rewrite: 228
+Total running time: 0 h, 1 min, 21.0346 s.
+
+---
+Optimized object file has written to file /home/kwb/slb-develop/bpf/slb/bpf2go/revtc_bpfel_rewrite.o
+Optimization report file has written to file /home/kwb/slb-develop/bpf/slb/bpf2go/revtc_bpfel_opt_report.txt

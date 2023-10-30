@@ -1,0 +1,39 @@
+
+----------Optimizing code from file '/root/code/github/superbpf-test-v2/oncn-mda/build/ebpf_src/CMakeFiles/sock_redirect.dir/sock_redirect.c.o'----------
+Optimizing block 0...
+Synthesis time: 0 h, 0 min, 0.076145 s.
+Synthesis time: 0 h, 0 min, 0.063666 s.
+Synthesis time: 0 h, 0 min, 0.25278 s.
+Synthesis time: 0 h, 0 min, 0.028888 s.
+Synthesis time: 0 h, 0 min, 0.249646 s.
+Synthesis time: 0 h, 0 min, 0.066126 s.
+Synthesis time: 0 h, 0 min, 0.157611 s.
+Synthesis time: 0 h, 0 min, 0.59666 s.
+Synthesis time: 0 h, 0 min, 0.288129 s.
+Synthesis time: 0 h, 0 min, 0.594553 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 15...
+Optimizing block 16...
+Optimizing block 17...
+Synthesis time: 0 h, 0 min, 0.000104 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 20...
+Synthesis time: 0 h, 0 min, 0.00075 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 23...
+Synthesis time: 0 h, 0 min, 4.5e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Number of instructions: origin: 25, rewrite: 25
+Total running time: 0 h, 0 min, 2.7466 s.
+
+---
+Optimized object file has written to file /root/code/github/superbpf-test-v2/oncn-mda/build/ebpf_src/CMakeFiles/sock_redirect.dir/sock_redirect.c_rewrite.o
+Optimization report file has written to file /root/code/github/superbpf-test-v2/oncn-mda/build/ebpf_src/CMakeFiles/sock_redirect.dir/sock_redirect.c_opt_report.txt

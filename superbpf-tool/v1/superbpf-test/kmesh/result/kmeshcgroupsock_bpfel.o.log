@@ -1,0 +1,67 @@
+
+----------Optimizing code from file '/root/code/github/superbpf-test/kmesh/bpf/kmesh/bpf2go/kmeshcgroupsock_bpfel.o'----------
+Optimizing block 0...
+Synthesis time: 0 h, 0 min, 0.015405 s.
+Synthesis time: 0 h, 0 min, 0.01507 s.
+Synthesis time: 0 h, 0 min, 0.053359 s.
+Synthesis time: 0 h, 0 min, 0.052964 s.
+Synthesis time: 0 h, 0 min, 0.054554 s.
+Synthesis time: 0 h, 0 min, 0.416683 s.
+Synthesis time: 0 h, 0 min, 0.14857 s.
+Synthesis time: 0 h, 0 min, 0.035533 s.
+Synthesis time: 0 h, 0 min, 0.170594 s.
+Synthesis time: 0 h, 0 min, 0.049931 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 14...
+Synthesis time: 0 h, 0 min, 6.5e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 15...
+Synthesis time: 0 h, 0 min, 0.024046 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 20...
+Optimizing block 21...
+Optimizing block 22...
+Synthesis time: 0 h, 0 min, 0.012849 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 28...
+Optimizing block 29...
+Optimizing block 30...
+Synthesis time: 0 h, 0 min, 0.001909 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 35...
+Synthesis time: 0 h, 0 min, 0.000149 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 37...
+Synthesis time: 0 h, 0 min, 0.028169 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 41...
+Optimizing block 43...
+Synthesis time: 0 h, 0 min, 0.000786 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 46...
+Synthesis time: 0 h, 0 min, 4.2e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Number of instructions: origin: 48, rewrite: 47
+Total running time: 0 h, 0 min, 1.4444 s.
+
+---
+Optimized object file has written to file /root/code/github/superbpf-test/kmesh/bpf/kmesh/bpf2go/kmeshcgroupsock_bpfel_rewrite.o
+Optimization report file has written to file /root/code/github/superbpf-test/kmesh/bpf/kmesh/bpf2go/kmeshcgroupsock_bpfel_opt_report.txt

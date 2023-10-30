@@ -1,0 +1,19 @@
+Optimized basic blocks: 
+Origin:
+Block 5
+insn[i] : code            dst_reg src_reg off        imm
+      5 : BPF_MOV_K       2       0       0x0        0x0
+      6 : BPF_STX_MEM_W   1       2       0x0        0x0
+
+------------------------------------------------------------
+Live-out regs: 
+Rewrite:
+Block 5
+insn[i] : code            dst_reg src_reg off        imm
+      5 : BPF_ST_MEM_W    1       0       0x0        0x0
+
+------------------------------------------------------------
+Number of instructions: origin: 9, rewrite: 8
+Instructions execution time: origin: 5.7 ns , rewrite: 5.5 ns
+Total running time: 0 h, 0 min, 0.157907 s.
+

@@ -1,0 +1,24 @@
+
+----------Optimizing code from file '/root/code/github/superbpf-test-v2/bpf/kmesh/bpf2go/kmeshtracepoint_bpfel.o'----------
+Optimizing block 0...
+Synthesis time: 0 h, 0 min, 0.000884 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 4...
+Optimizing block 5...
+Synthesis time: 0 h, 0 min, 5.7e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Optimizing block 7...
+Synthesis time: 0 h, 0 min, 4.1e-05 s.
+Validation passed!
+Pass validation after generating 1 candidates.
+
+Number of instructions: origin: 9, rewrite: 8
+Total running time: 0 h, 0 min, 0.157907 s.
+
+---
+Optimized object file has written to file /root/code/github/superbpf-test-v2/bpf/kmesh/bpf2go/kmeshtracepoint_bpfel_rewrite.o
+Optimization report file has written to file /root/code/github/superbpf-test-v2/bpf/kmesh/bpf2go/kmeshtracepoint_bpfel_opt_report.txt

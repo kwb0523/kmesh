@@ -1,0 +1,5 @@
+Optimized basic blocks: 
+Number of instructions: origin: 9, rewrite: 9
+Instructions execution time: origin: 5.7 ns , rewrite: 5.7 ns
+Total running time: 0 h, 0 min, 0.377928 s.
+

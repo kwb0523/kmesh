@@ -1,0 +1,1034 @@
+Optimized basic blocks: 
+Origin:
+Block 9
+insn[i] : code            dst_reg src_reg off        imm
+      9 : BPF_LDX_MEM_B   3       8       0xc        0x0
+     10 : BPF_LDX_MEM_B   4       8       0xd        0x0
+     11 : BPF_LSH_K       4       0       0x0        0x8
+     12 : BPF_OR_X        4       3       0x0        0x0
+     13 : BPF_MOV_K       9       0       0x0        0x2
+
+     14 : BPF_JNE         4       0       0x19       0x8
+------------------------------------------------------------
+Live-out regs: 1 2 3 4 5 6 8 9 10 
+Rewrite:
+Block 9
+insn[i] : code            dst_reg src_reg off        imm
+      9 : BPF_LDX_MEM_H   4       8       0xc        0x0
+     10 : BPF_LDX_MEM_B   3       8       0xc        0x0
+     11 : BPF_MOV_K       9       0       0x0        0x2
+
+     12 : BPF_JNE         4       0       0x19       0x8
+------------------------------------------------------------
+Origin:
+Block 103
+insn[i] : code            dst_reg src_reg off        imm
+    103 : BPF_LDX_MEM_B   2       7       0xc        0x0
+    104 : BPF_LDX_MEM_B   1       7       0xd        0x0
+    105 : BPF_LSH_K       1       0       0x0        0x8
+    106 : BPF_OR_X        1       2       0x0        0x0
+
+    107 : BPF_JEQ_K       1       0       0x1ae      0x0
+------------------------------------------------------------
+Live-out regs: 0 1 6 7 8 9 10 
+Rewrite:
+Block 103
+insn[i] : code            dst_reg src_reg off        imm
+    103 : BPF_LDX_MEM_H   1       7       0xc        0x0
+    Reloc: map_idx: 71781424
+
+    104 : BPF_JEQ_K       1       0       0x1ae      0x0
+------------------------------------------------------------
+Origin:
+Block 109
+insn[i] : code            dst_reg src_reg off        imm
+    109 : BPF_LDX_MEM_B   1       7       0x1        0x0
+    110 : BPF_LSH_K       1       0       0x0        0x8
+    111 : BPF_LDX_MEM_B   2       7       0x0        0x0
+    112 : BPF_OR_X        1       2       0x0        0x0
+    113 : BPF_LDX_MEM_B   2       7       0x3        0x0
+    114 : BPF_LSH_K       2       0       0x0        0x8
+    115 : BPF_LDX_MEM_B   3       7       0x2        0x0
+    116 : BPF_OR_X        2       3       0x0        0x0
+    117 : BPF_LSH_K       2       0       0x0        0x10
+    118 : BPF_OR_X        2       1       0x0        0x0
+    119 : BPF_STX_MEM_W   10      2       0xffc0     0x0
+
+    120 : BPF_CALL        0       0       0x0        0x7
+------------------------------------------------------------
+Live-out regs: 6 7 8 9 10 
+Rewrite:
+Block 109
+insn[i] : code            dst_reg src_reg off        imm
+    109 : BPF_LDX_MEM_H   1       7       0x0        0x0
+    110 : BPF_LDX_MEM_H   2       7       0x2        0x0
+    111 : BPF_LSH_K       2       0       0x0        0x10
+    112 : BPF_OR_X        2       1       0x0        0x0
+    113 : BPF_STX_MEM_W   10      2       0xffc0     0x0
+
+    114 : BPF_CALL        0       0       0x0        0x7
+------------------------------------------------------------
+Origin:
+Block 121
+insn[i] : code            dst_reg src_reg off        imm
+    121 : BPF_LDX_MEM_B   1       7       0x5        0x0
+    122 : BPF_LSH_K       1       0       0x0        0x8
+    123 : BPF_LDX_MEM_B   2       7       0x4        0x0
+    124 : BPF_OR_X        1       2       0x0        0x0
+    125 : BPF_LDX_MEM_B   2       7       0x6        0x0
+    126 : BPF_LDX_MEM_B   3       7       0x7        0x0
+    127 : BPF_LSH_K       3       0       0x0        0x8
+    128 : BPF_OR_X        3       2       0x0        0x0
+    129 : BPF_LSH_K       3       0       0x0        0x10
+    130 : BPF_OR_X        3       1       0x0        0x0
+    131 : BPF_MOV_X       1       0       0x0        0x0
+    132 : BPF_LSH_K       1       0       0x0        0x20
+    133 : BPF_RSH_K       1       0       0x0        0x20
+    134 : BPF_DIV_X       1       3       0x0        0x0
+    135 : BPF_MUL_X       1       3       0x0        0x0
+    136 : BPF_SUB_X       0       1       0x0        0x0
+    137 : BPF_STX_MEM_W   10      0       0xffc4     0x0
+    138 : BPF_MOV_X       2       10      0x0        0x0
+    139 : BPF_ADD_K       2       0       0x0        0xffffffc0
+
+    140 : BPF_LD_IMM_DW   1       0       0x0        0x0
+    Reloc: map_idx: 1
+    141 : NOP             0       0       0x0        0x0
+------------------------------------------------------------
+Live-out regs: 2 6 8 9 10 
+Rewrite:
+Block 121
+insn[i] : code            dst_reg src_reg off        imm
+    121 : BPF_LDX_MEM_H   1       7       0x4        0x0
+    122 : BPF_LDX_MEM_H   3       7       0x6        0x0
+    123 : BPF_LSH_K       3       0       0x0        0x10
+    124 : BPF_OR_X        3       1       0x0        0x0
+    125 : BPF_MOV_X       1       0       0x0        0x0
+    126 : BPF_LSH_K       1       0       0x0        0x20
+    127 : BPF_SUB_X       0       3       0x0        0x0
+    128 : BPF_SUB_X       0       3       0x0        0x0
+    129 : BPF_STX_MEM_W   10      0       0xffc4     0x0
+    130 : BPF_MOV_X       2       10      0x0        0x0
+    131 : BPF_ADD_K       2       0       0x0        0xffffffc0
+
+    132 : BPF_LD_IMM_DW   1       0       0x0        0x0
+    Reloc: map_idx: 1
+    133 : NOP             0       0       0x0        0x0
+------------------------------------------------------------
+Origin:
+Block 145
+insn[i] : code            dst_reg src_reg off        imm
+    145 : BPF_LDX_MEM_B   1       0       0x1        0x0
+    146 : BPF_LSH_K       1       0       0x0        0x8
+    147 : BPF_LDX_MEM_B   2       0       0x0        0x0
+    148 : BPF_OR_X        1       2       0x0        0x0
+    149 : BPF_LDX_MEM_B   2       0       0x2        0x0
+    150 : BPF_LDX_MEM_B   3       0       0x3        0x0
+    151 : BPF_LSH_K       3       0       0x0        0x8
+    152 : BPF_OR_X        3       2       0x0        0x0
+    153 : BPF_LSH_K       3       0       0x0        0x10
+    154 : BPF_OR_X        3       1       0x0        0x0
+    155 : BPF_STX_MEM_W   10      3       0xff88     0x0
+    156 : BPF_MOV_X       2       10      0x0        0x0
+    157 : BPF_ADD_K       2       0       0x0        0xffffff88
+
+    158 : BPF_LD_IMM_DW   1       0       0x0        0x0
+    Reloc: map_idx: 2
+    159 : NOP             0       0       0x0        0x0
+------------------------------------------------------------
+Live-out regs: 2 6 8 9 10 
+Rewrite:
+Block 145
+insn[i] : code            dst_reg src_reg off        imm
+    145 : BPF_LDX_MEM_H   1       0       0x0        0x0
+    146 : BPF_LDX_MEM_H   3       0       0x2        0x0
+    147 : BPF_LSH_K       3       0       0x0        0x10
+    148 : BPF_OR_X        3       1       0x0        0x0
+    149 : BPF_STX_MEM_W   10      3       0xff88     0x0
+    150 : BPF_MOV_X       2       10      0x0        0x0
+    151 : BPF_ADD_K       2       0       0x0        0xffffff88
+
+    152 : BPF_LD_IMM_DW   1       0       0x0        0x0
+    Reloc: map_idx: 2
+    153 : NOP             0       0       0x0        0x0
+------------------------------------------------------------
+Origin:
+Block 238
+insn[i] : code            dst_reg src_reg off        imm
+    238 : BPF_ADD_X       4       5       0x0        0x0
+    239 : BPF_MOV_X       5       4       0x0        0x0
+    240 : BPF_AND_K       5       0       0x0        0xffff
+    241 : BPF_AND_X       4       3       0x0        0x0
+    242 : BPF_RSH_K       4       0       0x0        0x10
+    243 : BPF_ADD_X       5       4       0x0        0x0
+    244 : BPF_ADD_X       2       1       0x0        0x0
+    245 : BPF_MOV_X       1       5       0x0        0x0
+    246 : BPF_RSH_K       1       0       0x0        0x10
+    247 : BPF_ADD_X       1       5       0x0        0x0
+    248 : BPF_XOR_K       1       0       0x0        0xffffffff
+    249 : BPF_STX_MEM_H   8       1       0x18       0x0
+    250 : BPF_MOV_X       1       2       0x0        0x0
+    251 : BPF_AND_X       1       3       0x0        0x0
+    252 : BPF_AND_K       2       0       0x0        0xffff
+    253 : BPF_RSH_K       1       0       0x0        0x10
+    254 : BPF_ADD_X       2       1       0x0        0x0
+    255 : BPF_MOV_X       1       2       0x0        0x0
+    256 : BPF_RSH_K       1       0       0x0        0x10
+    257 : BPF_ADD_X       1       2       0x0        0x0
+    258 : BPF_XOR_K       1       0       0x0        0xffffffff
+    259 : BPF_STX_MEM_H   8       1       0x32       0x0
+    260 : BPF_LDX_MEM_B   1       7       0x1e       0x0
+    261 : BPF_LSH_K       1       0       0x0        0x8
+    262 : BPF_LDX_MEM_B   2       7       0x1d       0x0
+    263 : BPF_OR_X        1       2       0x0        0x0
+    264 : BPF_LDX_MEM_B   2       7       0x17       0x0
+    265 : BPF_LDX_MEM_B   3       7       0x18       0x0
+    266 : BPF_LDX_MEM_B   4       7       0x15       0x0
+    267 : BPF_LDX_MEM_B   5       7       0x16       0x0
+    268 : BPF_STX_MEM_H   8       1       0x24       0x0
+    269 : BPF_LSH_K       5       0       0x0        0x8
+    270 : BPF_OR_X        5       4       0x0        0x0
+    271 : BPF_LSH_K       3       0       0x0        0x8
+    272 : BPF_OR_X        3       2       0x0        0x0
+    273 : BPF_LSH_K       3       0       0x0        0x10
+    274 : BPF_OR_X        3       5       0x0        0x0
+    275 : BPF_STX_MEM_W   8       3       0x1e       0x0
+    276 : BPF_LDX_MEM_B   1       7       0x22       0x0
+    277 : BPF_LSH_K       1       0       0x0        0x8
+    278 : BPF_LDX_MEM_B   2       7       0x21       0x0
+    279 : BPF_OR_X        1       2       0x0        0x0
+    280 : BPF_LDX_MEM_B   2       7       0x23       0x0
+    281 : BPF_LDX_MEM_B   3       7       0x24       0x0
+    282 : BPF_LSH_K       3       0       0x0        0x8
+    283 : BPF_OR_X        3       2       0x0        0x0
+    284 : BPF_LSH_K       3       0       0x0        0x10
+    285 : BPF_OR_X        3       1       0x0        0x0
+    286 : BPF_MOV_K       9       0       0x0        0x2
+
+    287 : BPF_JEQ_K       3       0       0x8c       0x0
+------------------------------------------------------------
+Live-out regs: 3 6 7 8 9 10 
+Rewrite:
+Block 238
+insn[i] : code            dst_reg src_reg off        imm
+    238 : BPF_ADD_X       4       5       0x0        0x0
+    239 : BPF_MOV_X       5       4       0x0        0x0
+    240 : BPF_AND_K       5       0       0x0        0xffff
+    241 : BPF_AND_X       4       3       0x0        0x0
+    242 : BPF_RSH_K       4       0       0x0        0x10
+    243 : BPF_ADD_X       5       4       0x0        0x0
+    244 : BPF_ADD_X       2       1       0x0        0x0
+    245 : BPF_MOV_X       1       5       0x0        0x0
+    246 : BPF_RSH_K       1       0       0x0        0x10
+    247 : BPF_ADD_X       1       5       0x0        0x0
+    248 : BPF_XOR_K       1       0       0x0        0xffffffff
+    249 : BPF_STX_MEM_H   8       1       0x18       0x0
+    250 : BPF_MOV_X       1       2       0x0        0x0
+    251 : BPF_AND_X       1       3       0x0        0x0
+    252 : BPF_AND_K       2       0       0x0        0xffff
+    253 : BPF_RSH_K       1       0       0x0        0x10
+    254 : BPF_ADD_X       2       1       0x0        0x0
+    Reloc: map_idx: 114814864
+    255 : BPF_RSH_K       1       0       0x0        0x10
+    Reloc: map_idx: 114814864
+    256 : BPF_ADD_X       1       2       0x0        0x0
+    257 : BPF_XOR_K       1       0       0x0        0xffffffff
+    258 : BPF_STX_MEM_H   8       1       0x32       0x0
+    259 : BPF_LDX_MEM_B   1       7       0x1e       0x0
+    260 : BPF_LSH_K       1       0       0x0        0x8
+    261 : BPF_LDX_MEM_B   2       7       0x1d       0x0
+    262 : BPF_OR_X        1       2       0x0        0x0
+    263 : BPF_LDX_MEM_B   2       7       0x17       0x0
+    264 : BPF_LDX_MEM_B   3       7       0x18       0x0
+    265 : BPF_LDX_MEM_B   4       7       0x15       0x0
+    266 : BPF_LDX_MEM_B   5       7       0x16       0x0
+    267 : BPF_STX_MEM_H   8       1       0x24       0x0
+    268 : BPF_LSH_K       5       0       0x0        0x8
+    269 : BPF_OR_X        5       4       0x0        0x0
+    270 : BPF_LSH_K       3       0       0x0        0x8
+    271 : BPF_OR_X        3       2       0x0        0x0
+    272 : BPF_LSH_K       3       0       0x0        0x10
+    273 : BPF_OR_X        3       5       0x0        0x0
+    274 : BPF_STX_MEM_W   8       3       0x1e       0x0
+    275 : BPF_LDX_MEM_B   1       7       0x22       0x0
+    276 : BPF_LSH_K       1       0       0x0        0x8
+    277 : BPF_LDX_MEM_B   2       7       0x21       0x0
+    278 : BPF_OR_X        1       2       0x0        0x0
+    279 : BPF_LDX_MEM_B   2       7       0x23       0x0
+    280 : BPF_LDX_MEM_B   3       7       0x24       0x0
+    281 : BPF_LSH_K       3       0       0x0        0x8
+    282 : BPF_OR_X        3       2       0x0        0x0
+    283 : BPF_LSH_K       3       0       0x0        0x10
+    284 : BPF_OR_X        3       1       0x0        0x0
+    285 : BPF_MOV_K       9       0       0x0        0x2
+
+    286 : BPF_JEQ_K       3       0       0x8c       0x0
+------------------------------------------------------------
+Origin:
+Block 350
+insn[i] : code            dst_reg src_reg off        imm
+    350 : BPF_ADD_X       4       5       0x0        0x0
+    351 : BPF_MOV_X       5       4       0x0        0x0
+    352 : BPF_AND_K       5       0       0x0        0xffff
+    353 : BPF_AND_X       4       3       0x0        0x0
+    354 : BPF_RSH_K       4       0       0x0        0x10
+    355 : BPF_ADD_X       5       4       0x0        0x0
+    356 : BPF_ADD_X       2       1       0x0        0x0
+    357 : BPF_MOV_X       1       5       0x0        0x0
+    358 : BPF_RSH_K       1       0       0x0        0x10
+    359 : BPF_ADD_X       1       5       0x0        0x0
+    360 : BPF_XOR_K       1       0       0x0        0xffffffff
+    361 : BPF_STX_MEM_H   8       1       0x18       0x0
+    362 : BPF_MOV_X       1       2       0x0        0x0
+    363 : BPF_AND_X       1       3       0x0        0x0
+    364 : BPF_AND_K       2       0       0x0        0xffff
+    365 : BPF_RSH_K       1       0       0x0        0x10
+    366 : BPF_ADD_X       2       1       0x0        0x0
+    367 : BPF_MOV_X       1       2       0x0        0x0
+    368 : BPF_RSH_K       1       0       0x0        0x10
+    369 : BPF_ADD_X       1       2       0x0        0x0
+    370 : BPF_XOR_K       1       0       0x0        0xffffffff
+    371 : BPF_STX_MEM_H   8       1       0x32       0x0
+    372 : BPF_LDX_MEM_B   1       7       0x1a       0x0
+    373 : BPF_LSH_K       1       0       0x0        0x8
+    374 : BPF_LDX_MEM_B   2       7       0x19       0x0
+    375 : BPF_OR_X        1       2       0x0        0x0
+    376 : BPF_LDX_MEM_B   2       7       0x13       0x0
+    377 : BPF_LDX_MEM_B   3       7       0x14       0x0
+    378 : BPF_LDX_MEM_B   4       7       0x11       0x0
+    379 : BPF_LDX_MEM_B   5       7       0x12       0x0
+    380 : BPF_STX_MEM_H   8       1       0x22       0x0
+    381 : BPF_LSH_K       5       0       0x0        0x8
+    382 : BPF_OR_X        5       4       0x0        0x0
+    383 : BPF_LSH_K       3       0       0x0        0x8
+    384 : BPF_OR_X        3       2       0x0        0x0
+    385 : BPF_LSH_K       3       0       0x0        0x10
+    386 : BPF_OR_X        3       5       0x0        0x0
+    387 : BPF_STX_MEM_W   8       3       0x1a       0x0
+    388 : BPF_LDX_MEM_B   1       7       0x2a       0x0
+    389 : BPF_STX_MEM_B   8       1       0xb        0x0
+    390 : BPF_LDX_MEM_B   1       7       0x29       0x0
+    391 : BPF_STX_MEM_B   8       1       0xa        0x0
+    392 : BPF_LDX_MEM_B   1       7       0x28       0x0
+    393 : BPF_STX_MEM_B   8       1       0x9        0x0
+    394 : BPF_LDX_MEM_B   1       7       0x27       0x0
+    395 : BPF_STX_MEM_B   8       1       0x8        0x0
+    396 : BPF_LDX_MEM_B   1       7       0x26       0x0
+    397 : BPF_STX_MEM_B   8       1       0x7        0x0
+    398 : BPF_LDX_MEM_B   1       7       0x25       0x0
+    399 : BPF_STX_MEM_B   8       1       0x6        0x0
+    400 : BPF_LDX_MEM_B   1       7       0x30       0x0
+    401 : BPF_STX_MEM_B   8       1       0x5        0x0
+    402 : BPF_LDX_MEM_B   1       7       0x2f       0x0
+    403 : BPF_STX_MEM_B   8       1       0x4        0x0
+    404 : BPF_LDX_MEM_B   1       7       0x2e       0x0
+    405 : BPF_STX_MEM_B   8       1       0x3        0x0
+    406 : BPF_LDX_MEM_B   1       7       0x2d       0x0
+    407 : BPF_STX_MEM_B   8       1       0x2        0x0
+    408 : BPF_LDX_MEM_B   1       7       0x2c       0x0
+    409 : BPF_STX_MEM_B   8       1       0x1        0x0
+    410 : BPF_LDX_MEM_B   1       7       0x2b       0x0
+    411 : BPF_STX_MEM_B   8       1       0x0        0x0
+    412 : BPF_LDX_MEM_B   2       7       0x32       0x0
+    413 : BPF_LSH_K       2       0       0x0        0x8
+    414 : BPF_LDX_MEM_B   1       7       0x31       0x0
+    415 : BPF_OR_X        2       1       0x0        0x0
+    416 : BPF_LDX_MEM_B   3       7       0x33       0x0
+    417 : BPF_LDX_MEM_B   1       7       0x34       0x0
+    418 : BPF_LSH_K       1       0       0x0        0x8
+    419 : BPF_OR_X        1       3       0x0        0x0
+    420 : BPF_LSH_K       1       0       0x0        0x10
+    421 : BPF_OR_X        1       2       0x0        0x0
+    422 : BPF_MOV_K       9       0       0x0        0x3
+    423 : BPF_LDX_MEM_W   2       6       0xc        0x0
+
+    424 : BPF_JEQ_X       1       2       0x3        0x0
+------------------------------------------------------------
+Live-out regs: 1 2 7 8 9 10 
+Rewrite:
+Block 350
+insn[i] : code            dst_reg src_reg off        imm
+    350 : BPF_ADD_X       4       5       0x0        0x0
+    351 : BPF_MOV_X       5       4       0x0        0x0
+    352 : BPF_AND_K       5       0       0x0        0xffff
+    353 : BPF_AND_X       4       3       0x0        0x0
+    354 : BPF_RSH_K       4       0       0x0        0x10
+    355 : BPF_ADD_X       5       4       0x0        0x0
+    356 : BPF_ADD_X       2       1       0x0        0x0
+    357 : BPF_MOV_X       1       5       0x0        0x0
+    358 : BPF_RSH_K       1       0       0x0        0x10
+    359 : BPF_ADD_X       1       5       0x0        0x0
+    360 : BPF_XOR_K       1       0       0x0        0xffffffff
+    361 : BPF_STX_MEM_H   8       1       0x18       0x0
+    362 : BPF_MOV_X       1       2       0x0        0x0
+    363 : BPF_AND_X       1       3       0x0        0x0
+    364 : BPF_AND_K       2       0       0x0        0xffff
+    365 : BPF_RSH_K       1       0       0x0        0x10
+    366 : BPF_ADD_X       2       1       0x0        0x0
+    Reloc: map_idx: 180138736
+    367 : BPF_RSH_K       1       0       0x0        0x10
+    Reloc: map_idx: 180138736
+    368 : BPF_ADD_X       1       2       0x0        0x0
+    369 : BPF_XOR_K       1       0       0x0        0xffffffff
+    370 : BPF_STX_MEM_H   8       1       0x32       0x0
+    371 : BPF_LDX_MEM_B   1       7       0x1a       0x0
+    372 : BPF_LSH_K       1       0       0x0        0x8
+    373 : BPF_LDX_MEM_B   2       7       0x19       0x0
+    374 : BPF_OR_X        1       2       0x0        0x0
+    375 : BPF_LDX_MEM_B   2       7       0x13       0x0
+    376 : BPF_LDX_MEM_B   3       7       0x14       0x0
+    377 : BPF_LDX_MEM_B   4       7       0x11       0x0
+    378 : BPF_LDX_MEM_B   5       7       0x12       0x0
+    379 : BPF_STX_MEM_H   8       1       0x22       0x0
+    380 : BPF_LSH_K       5       0       0x0        0x8
+    381 : BPF_OR_X        5       4       0x0        0x0
+    382 : BPF_LSH_K       3       0       0x0        0x8
+    383 : BPF_OR_X        3       2       0x0        0x0
+    384 : BPF_LSH_K       3       0       0x0        0x10
+    385 : BPF_OR_X        3       5       0x0        0x0
+    386 : BPF_STX_MEM_W   8       3       0x1a       0x0
+    387 : BPF_LDX_MEM_B   1       7       0x2a       0x0
+    388 : BPF_STX_MEM_B   8       1       0xb        0x0
+    389 : BPF_LDX_MEM_B   1       7       0x29       0x0
+    390 : BPF_STX_MEM_B   8       1       0xa        0x0
+    391 : BPF_LDX_MEM_B   1       7       0x28       0x0
+    392 : BPF_STX_MEM_B   8       1       0x9        0x0
+    393 : BPF_LDX_MEM_B   1       7       0x27       0x0
+    394 : BPF_STX_MEM_B   8       1       0x8        0x0
+    395 : BPF_LDX_MEM_B   1       7       0x26       0x0
+    396 : BPF_STX_MEM_B   8       1       0x7        0x0
+    397 : BPF_LDX_MEM_B   1       7       0x25       0x0
+    398 : BPF_STX_MEM_B   8       1       0x6        0x0
+    399 : BPF_LDX_MEM_B   1       7       0x30       0x0
+    400 : BPF_STX_MEM_B   8       1       0x5        0x0
+    401 : BPF_LDX_MEM_B   1       7       0x2f       0x0
+    402 : BPF_STX_MEM_B   8       1       0x4        0x0
+    403 : BPF_LDX_MEM_B   1       7       0x2e       0x0
+    404 : BPF_STX_MEM_B   8       1       0x3        0x0
+    405 : BPF_LDX_MEM_B   1       7       0x2d       0x0
+    406 : BPF_STX_MEM_B   8       1       0x2        0x0
+    407 : BPF_LDX_MEM_B   1       7       0x2c       0x0
+    408 : BPF_STX_MEM_B   8       1       0x1        0x0
+    409 : BPF_LDX_MEM_B   1       7       0x2b       0x0
+    410 : BPF_STX_MEM_B   8       1       0x0        0x0
+    411 : BPF_LDX_MEM_B   0       7       0x31       0x0
+    412 : BPF_OR_X        0       7       0x0        0x0
+    413 : BPF_LDX_MEM_H   2       0       0x30       0x0
+    414 : BPF_LDX_MEM_B   0       7       0x33       0x0
+    415 : BPF_OR_X        0       7       0x0        0x0
+    416 : BPF_LDX_MEM_H   1       0       0x10       0x0
+    Reloc: map_idx: 199631488
+    417 : BPF_LSH_K       1       0       0x0        0x10
+    418 : BPF_OR_X        1       2       0x0        0x0
+    419 : BPF_MOV_K       9       0       0x0        0x3
+    420 : BPF_LDX_MEM_W   2       6       0xc        0x0
+
+    421 : BPF_JEQ_X       1       2       0x3        0x0
+------------------------------------------------------------
+Origin:
+Block 431
+insn[i] : code            dst_reg src_reg off        imm
+    431 : BPF_LDX_MEM_W   1       8       0x26       0x0
+    432 : BPF_MOV_X       2       1       0x0        0x0
+    433 : BPF_TO_BE32     2       0       0x0        0x10
+    434 : BPF_STX_MEM_B   7       2       0x37       0x0
+    435 : BPF_MOV_X       2       1       0x0        0x0
+    436 : BPF_TO_BE32     2       0       0x0        0x20
+    437 : BPF_STX_MEM_B   7       2       0x35       0x0
+    438 : BPF_TO_BE32     1       0       0x0        0x40
+    439 : BPF_MOV_X       2       1       0x0        0x0
+    440 : BPF_RSH_K       2       0       0x0        0x38
+    441 : BPF_STX_MEM_B   7       2       0x38       0x0
+    442 : BPF_RSH_K       1       0       0x0        0x28
+    443 : BPF_STX_MEM_B   7       1       0x36       0x0
+
+    444 : BPF_JA          0       0       0xfe6f     0x0
+------------------------------------------------------------
+Live-out regs: 9 
+Rewrite:
+Block 431
+insn[i] : code            dst_reg src_reg off        imm
+    431 : BPF_LDX_MEM_W   1       8       0x26       0x0
+    432 : BPF_MOV_X       2       1       0x0        0x0
+    433 : BPF_TO_BE32     2       0       0x0        0x10
+    434 : BPF_STX_MEM_B   7       2       0x37       0x0
+    435 : BPF_MOV_X       2       1       0x0        0x0
+    436 : BPF_TO_BE32     2       0       0x0        0x20
+    437 : BPF_STX_MEM_B   7       2       0x35       0x0
+    438 : BPF_STX_MEM_B   7       1       0x38       0x0
+    439 : BPF_TO_BE32     1       0       0x0        0x40
+    440 : BPF_RSH_K       1       0       0x0        0x28
+    441 : BPF_STX_MEM_B   7       1       0x36       0x0
+
+    442 : BPF_JA          0       0       0xfe6f     0x0
+------------------------------------------------------------
+Origin:
+Block 445
+insn[i] : code            dst_reg src_reg off        imm
+    445 : BPF_LDX_MEM_B   2       7       0x36       0x0
+    446 : BPF_LSH_K       2       0       0x0        0x8
+    447 : BPF_LDX_MEM_B   1       7       0x35       0x0
+    448 : BPF_OR_X        2       1       0x0        0x0
+    449 : BPF_LDX_MEM_B   3       7       0x37       0x0
+    450 : BPF_LDX_MEM_B   1       7       0x38       0x0
+    451 : BPF_LSH_K       1       0       0x0        0x8
+    452 : BPF_OR_X        1       3       0x0        0x0
+    453 : BPF_LSH_K       1       0       0x0        0x10
+    454 : BPF_OR_X        1       2       0x0        0x0
+
+    455 : BPF_JEQ_K       1       0       0xfe64     0x0
+------------------------------------------------------------
+Live-out regs: 1 7 8 9 10 
+Rewrite:
+Block 445
+insn[i] : code            dst_reg src_reg off        imm
+    445 : BPF_LDX_MEM_B   0       7       0x36       0x0
+    446 : BPF_OR_X        0       7       0x0        0x0
+    447 : BPF_LDX_MEM_H   2       0       0x30       0x0
+    448 : BPF_LDX_MEM_B   0       7       0x37       0x0
+    449 : BPF_OR_X        0       7       0x0        0x0
+    450 : BPF_LDX_MEM_H   1       0       0x22       0x0
+    Reloc: map_idx: 227218544
+    451 : BPF_LSH_K       1       0       0x0        0x10
+    452 : BPF_OR_X        1       2       0x0        0x0
+
+    453 : BPF_JEQ_K       1       0       0xfe64     0x0
+------------------------------------------------------------
+Origin:
+Block 538
+insn[i] : code            dst_reg src_reg off        imm
+    538 : BPF_LDX_MEM_B   1       7       0x1        0x0
+    539 : BPF_LSH_K       1       0       0x0        0x8
+    540 : BPF_LDX_MEM_B   2       7       0x0        0x0
+    541 : BPF_OR_X        1       2       0x0        0x0
+    542 : BPF_LDX_MEM_B   2       7       0x3        0x0
+    543 : BPF_LSH_K       2       0       0x0        0x8
+    544 : BPF_LDX_MEM_B   3       7       0x2        0x0
+    545 : BPF_OR_X        2       3       0x0        0x0
+    546 : BPF_LSH_K       2       0       0x0        0x10
+    547 : BPF_OR_X        2       1       0x0        0x0
+    548 : BPF_STX_MEM_W   10      2       0xffc0     0x0
+    549 : BPF_LDX_MEM_B   2       7       0x5        0x0
+    550 : BPF_LSH_K       2       0       0x0        0x8
+    551 : BPF_LDX_MEM_B   1       7       0x4        0x0
+    552 : BPF_OR_X        2       1       0x0        0x0
+    553 : BPF_LDX_MEM_B   1       7       0x7        0x0
+    554 : BPF_LSH_K       1       0       0x0        0x8
+    555 : BPF_LDX_MEM_B   3       7       0x6        0x0
+    556 : BPF_OR_X        1       3       0x0        0x0
+    557 : BPF_LSH_K       1       0       0x0        0x10
+    558 : BPF_OR_X        1       2       0x0        0x0
+    559 : BPF_LDX_MEM_B   2       7       0x9        0x0
+    560 : BPF_LSH_K       2       0       0x0        0x8
+    561 : BPF_LDX_MEM_B   3       7       0x8        0x0
+    562 : BPF_OR_X        2       3       0x0        0x0
+    563 : BPF_LDX_MEM_B   3       7       0xb        0x0
+    564 : BPF_LSH_K       3       0       0x0        0x8
+    565 : BPF_LDX_MEM_B   4       7       0xa        0x0
+    566 : BPF_OR_X        3       4       0x0        0x0
+    567 : BPF_LSH_K       3       0       0x0        0x10
+    568 : BPF_OR_X        3       2       0x0        0x0
+    569 : BPF_MOV_X       2       3       0x0        0x0
+    570 : BPF_DIV_X       2       1       0x0        0x0
+    571 : BPF_MUL_X       2       1       0x0        0x0
+    572 : BPF_SUB_X       3       2       0x0        0x0
+    573 : BPF_STX_MEM_W   10      3       0xffc4     0x0
+    574 : BPF_MOV_K       1       0       0x0        0x1
+    575 : BPF_STX_XADD_W  7       1       0x8        0x0
+    576 : BPF_MOV_X       2       10      0x0        0x0
+    577 : BPF_ADD_K       2       0       0x0        0xffffffc0
+
+    578 : BPF_LD_IMM_DW   1       0       0x0        0x0
+    Reloc: map_idx: 1
+    579 : NOP             0       0       0x0        0x0
+------------------------------------------------------------
+Live-out regs: 2 6 8 9 10 
+Rewrite:
+Block 538
+insn[i] : code            dst_reg src_reg off        imm
+    538 : BPF_LDX_MEM_H   1       7       0x0        0x0
+    539 : BPF_LDX_MEM_H   2       7       0x2        0x0
+    540 : BPF_LSH_K       2       0       0x0        0x10
+    541 : BPF_OR_X        2       1       0x0        0x0
+    542 : BPF_STX_MEM_W   10      2       0xffc0     0x0
+    543 : BPF_LDX_MEM_H   2       7       0x4        0x0
+    544 : BPF_LDX_MEM_H   1       7       0x6        0x0
+    545 : BPF_LSH_K       1       0       0x0        0x10
+    546 : BPF_OR_X        1       2       0x0        0x0
+    547 : BPF_LDX_MEM_H   2       7       0x8        0x0
+    548 : BPF_LDX_MEM_H   3       7       0xa        0x0
+    549 : BPF_LSH_K       3       0       0x0        0x10
+    550 : BPF_OR_X        3       2       0x0        0x0
+    Reloc: map_idx: 260921376
+    551 : BPF_DIV_X       2       2       0x0        0x0
+    Reloc: map_idx: 260921376
+    552 : BPF_SUB_X       3       1       0x0        0x0
+    553 : BPF_STX_MEM_W   10      3       0xffc4     0x0
+    Reloc: map_idx: 240931568
+    554 : BPF_MOV_K       1       0       0x0        0x1
+    555 : BPF_STX_XADD_W  7       1       0x8        0x0
+    556 : BPF_MOV_X       2       10      0x0        0x0
+    557 : BPF_ADD_K       2       0       0x0        0xffffffc0
+
+    558 : BPF_LD_IMM_DW   1       0       0x0        0x0
+    Reloc: map_idx: 1
+    559 : NOP             0       0       0x0        0x0
+------------------------------------------------------------
+Origin:
+Block 583
+insn[i] : code            dst_reg src_reg off        imm
+    583 : BPF_LDX_MEM_B   1       0       0x1        0x0
+    584 : BPF_LSH_K       1       0       0x0        0x8
+    585 : BPF_LDX_MEM_B   2       0       0x0        0x0
+    586 : BPF_OR_X        1       2       0x0        0x0
+    587 : BPF_LDX_MEM_B   2       0       0x2        0x0
+    588 : BPF_LDX_MEM_B   3       0       0x3        0x0
+    589 : BPF_LSH_K       3       0       0x0        0x8
+    590 : BPF_OR_X        3       2       0x0        0x0
+    591 : BPF_LSH_K       3       0       0x0        0x10
+    592 : BPF_OR_X        3       1       0x0        0x0
+    593 : BPF_STX_MEM_W   10      3       0xff88     0x0
+    594 : BPF_MOV_X       2       10      0x0        0x0
+    595 : BPF_ADD_K       2       0       0x0        0xffffff88
+
+    596 : BPF_LD_IMM_DW   1       0       0x0        0x0
+    Reloc: map_idx: 2
+    597 : NOP             0       0       0x0        0x0
+------------------------------------------------------------
+Live-out regs: 2 6 8 9 10 
+Rewrite:
+Block 583
+insn[i] : code            dst_reg src_reg off        imm
+    583 : BPF_LDX_MEM_H   1       0       0x0        0x0
+    584 : BPF_LDX_MEM_H   3       0       0x2        0x0
+    585 : BPF_LSH_K       3       0       0x0        0x10
+    586 : BPF_OR_X        3       1       0x0        0x0
+    587 : BPF_STX_MEM_W   10      3       0xff88     0x0
+    588 : BPF_MOV_X       2       10      0x0        0x0
+    589 : BPF_ADD_K       2       0       0x0        0xffffff88
+
+    590 : BPF_LD_IMM_DW   1       0       0x0        0x0
+    Reloc: map_idx: 2
+    591 : NOP             0       0       0x0        0x0
+------------------------------------------------------------
+Origin:
+Block 686
+insn[i] : code            dst_reg src_reg off        imm
+    686 : BPF_ADD_X       2       1       0x0        0x0
+    687 : BPF_MOV_X       1       5       0x0        0x0
+    688 : BPF_RSH_K       1       0       0x0        0x10
+    689 : BPF_ADD_X       1       5       0x0        0x0
+    690 : BPF_XOR_K       1       0       0x0        0xffffffff
+    691 : BPF_STX_MEM_H   8       1       0x18       0x0
+    692 : BPF_MOV_X       1       2       0x0        0x0
+    693 : BPF_AND_X       1       3       0x0        0x0
+    694 : BPF_AND_K       2       0       0x0        0xffff
+    695 : BPF_RSH_K       1       0       0x0        0x10
+    696 : BPF_ADD_X       2       1       0x0        0x0
+    697 : BPF_MOV_X       1       2       0x0        0x0
+    698 : BPF_RSH_K       1       0       0x0        0x10
+    699 : BPF_ADD_X       1       2       0x0        0x0
+    700 : BPF_XOR_K       1       0       0x0        0xffffffff
+    701 : BPF_STX_MEM_H   8       1       0x32       0x0
+    702 : BPF_LDX_MEM_B   1       7       0x3        0x0
+    703 : BPF_LSH_K       1       0       0x0        0x8
+    704 : BPF_LDX_MEM_B   2       7       0x2        0x0
+    705 : BPF_OR_X        1       2       0x0        0x0
+    706 : BPF_LDX_MEM_B   2       7       0x8        0x0
+    707 : BPF_LDX_MEM_B   3       7       0x9        0x0
+    708 : BPF_LDX_MEM_B   4       7       0x6        0x0
+    709 : BPF_LDX_MEM_B   5       7       0x7        0x0
+    710 : BPF_STX_MEM_H   8       1       0x24       0x0
+    711 : BPF_LSH_K       5       0       0x0        0x8
+    712 : BPF_OR_X        5       4       0x0        0x0
+    713 : BPF_LSH_K       3       0       0x0        0x8
+    714 : BPF_OR_X        3       2       0x0        0x0
+    715 : BPF_LSH_K       3       0       0x0        0x10
+    716 : BPF_OR_X        3       5       0x0        0x0
+    717 : BPF_STX_MEM_W   8       3       0x1e       0x0
+    718 : BPF_LDX_MEM_W   1       6       0xc        0x0
+    719 : BPF_MOV_X       2       1       0x0        0x0
+    720 : BPF_RSH_K       2       0       0x0        0x18
+    721 : BPF_STX_MEM_B   10      2       0xfff4     0x0
+    722 : BPF_MOV_X       2       1       0x0        0x0
+    723 : BPF_RSH_K       2       0       0x0        0x10
+    724 : BPF_STX_MEM_B   10      2       0xfff3     0x0
+    725 : BPF_STX_MEM_B   10      1       0xfff1     0x0
+    726 : BPF_RSH_K       1       0       0x0        0x8
+    727 : BPF_STX_MEM_B   10      1       0xfff2     0x0
+    728 : BPF_LDX_MEM_B   1       8       0x17       0x0
+    729 : BPF_STX_MEM_B   10      1       0xffd0     0x0
+    730 : BPF_LDX_MEM_W   1       8       0x1a       0x0
+    731 : BPF_MOV_X       2       1       0x0        0x0
+    732 : BPF_RSH_K       2       0       0x0        0x18
+    733 : BPF_STX_MEM_B   10      2       0xffd4     0x0
+    734 : BPF_MOV_X       2       1       0x0        0x0
+    735 : BPF_RSH_K       2       0       0x0        0x10
+    736 : BPF_STX_MEM_B   10      2       0xffd3     0x0
+    737 : BPF_STX_MEM_B   10      1       0xffd1     0x0
+    738 : BPF_RSH_K       1       0       0x0        0x8
+    739 : BPF_STX_MEM_B   10      1       0xffd2     0x0
+    740 : BPF_LDX_MEM_W   1       8       0x1e       0x0
+    741 : BPF_MOV_X       2       1       0x0        0x0
+    742 : BPF_RSH_K       2       0       0x0        0x18
+    743 : BPF_STX_MEM_B   10      2       0xffd8     0x0
+    744 : BPF_MOV_X       2       1       0x0        0x0
+    745 : BPF_RSH_K       2       0       0x0        0x10
+    746 : BPF_STX_MEM_B   10      2       0xffd7     0x0
+    747 : BPF_STX_MEM_B   10      1       0xffd5     0x0
+    748 : BPF_RSH_K       1       0       0x0        0x8
+    749 : BPF_STX_MEM_B   10      1       0xffd6     0x0
+    750 : BPF_LDX_MEM_H   1       8       0x22       0x0
+    751 : BPF_STX_MEM_B   10      1       0xffd9     0x0
+    752 : BPF_RSH_K       1       0       0x0        0x8
+    753 : BPF_STX_MEM_B   10      1       0xffda     0x0
+    754 : BPF_MOV_K       2       0       0x0        0x0
+    755 : BPF_STX_MEM_B   10      2       0xffdc     0x0
+    756 : BPF_STX_MEM_B   10      2       0xffdb     0x0
+    757 : BPF_LDX_MEM_H   1       8       0x24       0x0
+    758 : BPF_STX_MEM_B   10      1       0xffdd     0x0
+    759 : BPF_RSH_K       1       0       0x0        0x8
+    760 : BPF_STX_MEM_B   10      1       0xffde     0x0
+    761 : BPF_STX_MEM_B   10      2       0xffe0     0x0
+    762 : BPF_STX_MEM_B   10      2       0xffdf     0x0
+    763 : BPF_STX_MEM_B   10      2       0xffe4     0x0
+    764 : BPF_STX_MEM_B   10      2       0xffe3     0x0
+    765 : BPF_STX_MEM_B   10      2       0xffe2     0x0
+    766 : BPF_STX_MEM_B   10      2       0xffe1     0x0
+    767 : BPF_LDX_MEM_B   1       8       0x7        0x0
+    768 : BPF_STX_MEM_B   10      1       0xffe6     0x0
+    769 : BPF_LDX_MEM_B   1       8       0x6        0x0
+    770 : BPF_STX_MEM_B   10      1       0xffe5     0x0
+    771 : BPF_LDX_MEM_B   1       8       0x9        0x0
+    772 : BPF_STX_MEM_B   10      1       0xffe8     0x0
+    773 : BPF_LDX_MEM_B   1       8       0xb        0x0
+    774 : BPF_STX_MEM_B   10      1       0xffea     0x0
+    775 : BPF_LDX_MEM_B   1       8       0xa        0x0
+    776 : BPF_STX_MEM_B   10      1       0xffe9     0x0
+    777 : BPF_LDX_MEM_B   1       8       0x8        0x0
+    778 : BPF_STX_MEM_B   10      1       0xffe7     0x0
+    779 : BPF_LDX_MEM_B   1       8       0x5        0x0
+    780 : BPF_STX_MEM_B   10      1       0xfff0     0x0
+    781 : BPF_LDX_MEM_B   1       8       0x4        0x0
+    782 : BPF_STX_MEM_B   10      1       0xffef     0x0
+    783 : BPF_LDX_MEM_B   1       8       0x2        0x0
+    784 : BPF_STX_MEM_B   10      1       0xffed     0x0
+    785 : BPF_LDX_MEM_B   1       8       0x3        0x0
+    786 : BPF_STX_MEM_B   10      1       0xffee     0x0
+    787 : BPF_LDX_MEM_B   1       8       0x0        0x0
+    788 : BPF_STX_MEM_B   10      1       0xffeb     0x0
+    789 : BPF_LDX_MEM_B   1       8       0x1        0x0
+    790 : BPF_STX_MEM_B   10      1       0xffec     0x0
+    791 : BPF_MOV_X       2       10      0x0        0x0
+    792 : BPF_ADD_K       2       0       0x0        0xffffff30
+    793 : BPF_MOV_X       3       10      0x0        0x0
+    794 : BPF_ADD_K       3       0       0x0        0xffffffc0
+
+    795 : BPF_LD_IMM_DW   1       0       0x0        0x0
+    Reloc: map_idx: 3
+    796 : NOP             0       0       0x0        0x0
+------------------------------------------------------------
+Live-out regs: 2 3 5 8 10 
+Rewrite:
+Block 686
+insn[i] : code            dst_reg src_reg off        imm
+    686 : BPF_ADD_X       2       1       0x0        0x0
+    687 : BPF_MOV_X       1       5       0x0        0x0
+    688 : BPF_RSH_K       1       0       0x0        0x10
+    689 : BPF_ADD_X       1       5       0x0        0x0
+    690 : BPF_XOR_K       1       0       0x0        0xffffffff
+    691 : BPF_STX_MEM_H   8       1       0x18       0x0
+    692 : BPF_MOV_X       1       2       0x0        0x0
+    693 : BPF_AND_X       1       3       0x0        0x0
+    694 : BPF_AND_K       2       0       0x0        0xffff
+    695 : BPF_RSH_K       1       0       0x0        0x10
+    696 : BPF_ADD_X       2       1       0x0        0x0
+    Reloc: map_idx: 314262032
+    697 : BPF_RSH_K       1       0       0x0        0x10
+    Reloc: map_idx: 314262032
+    698 : BPF_ADD_X       1       2       0x0        0x0
+    699 : BPF_XOR_K       1       0       0x0        0xffffffff
+    700 : BPF_STX_MEM_H   8       1       0x32       0x0
+    701 : BPF_LDX_MEM_H   1       7       0x2        0x0
+    702 : BPF_LDX_MEM_B   2       7       0x8        0x0
+    703 : BPF_LDX_MEM_B   3       7       0x9        0x0
+    704 : BPF_LDX_MEM_B   4       7       0x6        0x0
+    705 : BPF_LDX_MEM_B   5       7       0x7        0x0
+    706 : BPF_STX_MEM_H   8       1       0x24       0x0
+    707 : BPF_LSH_K       5       0       0x0        0x8
+    708 : BPF_OR_X        5       4       0x0        0x0
+    709 : BPF_LSH_K       3       0       0x0        0x8
+    710 : BPF_OR_X        3       2       0x0        0x0
+    711 : BPF_LSH_K       3       0       0x0        0x10
+    712 : BPF_OR_X        3       5       0x0        0x0
+    713 : BPF_STX_MEM_W   8       3       0x1e       0x0
+    714 : BPF_LDX_MEM_W   1       6       0xc        0x0
+    715 : BPF_MOV_X       2       1       0x0        0x0
+    716 : BPF_RSH_K       2       0       0x0        0x18
+    717 : BPF_STX_MEM_B   10      2       0xfff4     0x0
+    718 : BPF_MOV_X       2       1       0x0        0x0
+    719 : BPF_RSH_K       2       0       0x0        0x10
+    720 : BPF_STX_MEM_B   10      1       0xfff1     0x0
+    721 : BPF_RSH_K       1       0       0x0        0x8
+    722 : BPF_STX_MEM_H   10      1       0xfff2     0x0
+    723 : BPF_LDX_MEM_B   1       8       0x17       0x0
+    724 : BPF_STX_MEM_B   10      1       0xffd0     0x0
+    725 : BPF_LDX_MEM_W   1       8       0x1a       0x0
+    726 : BPF_MOV_X       2       1       0x0        0x0
+    727 : BPF_RSH_K       2       0       0x0        0x18
+    728 : BPF_STX_MEM_B   10      2       0xffd4     0x0
+    729 : BPF_MOV_X       2       1       0x0        0x0
+    730 : BPF_RSH_K       2       0       0x0        0x10
+    731 : BPF_STX_MEM_B   10      1       0xffd1     0x0
+    732 : BPF_RSH_K       1       0       0x0        0x8
+    733 : BPF_STX_MEM_H   10      1       0xffd2     0x0
+    734 : BPF_LDX_MEM_W   1       8       0x1e       0x0
+    735 : BPF_MOV_X       2       1       0x0        0x0
+    736 : BPF_RSH_K       2       0       0x0        0x18
+    737 : BPF_STX_MEM_B   10      2       0xffd8     0x0
+    738 : BPF_MOV_X       2       1       0x0        0x0
+    739 : BPF_RSH_K       2       0       0x0        0x10
+    740 : BPF_STX_MEM_B   10      1       0xffd5     0x0
+    741 : BPF_RSH_K       1       0       0x0        0x8
+    742 : BPF_STX_MEM_H   10      1       0xffd6     0x0
+    743 : BPF_LDX_MEM_H   1       8       0x22       0x0
+    744 : BPF_STX_MEM_B   10      1       0xffd9     0x0
+    745 : BPF_RSH_K       1       0       0x0        0x8
+    746 : BPF_STX_MEM_H   10      1       0xffda     0x0
+    747 : BPF_ST_MEM_B    10      0       0xffdc     0x0
+    748 : BPF_MOV_K       2       0       0x0        0x0
+    749 : BPF_LDX_MEM_H   1       8       0x24       0x0
+    750 : BPF_STX_MEM_B   10      1       0xffdd     0x0
+    751 : BPF_ST_MEM_B    10      0       0xffe0     0x0
+    752 : BPF_RSH_K       1       0       0x0        0x8
+    753 : BPF_STX_MEM_H   10      1       0xffde     0x0
+    754 : BPF_ST_MEM_B    10      0       0xffe1     0x0
+    755 : BPF_STX_MEM_H   10      2       0xffe2     0x0
+    756 : BPF_ST_MEM_B    10      0       0xffe4     0x0
+    757 : BPF_LDX_MEM_B   1       8       0x7        0x0
+    758 : BPF_STX_MEM_B   10      1       0xffe6     0x0
+    759 : BPF_LDX_MEM_B   1       8       0x6        0x0
+    760 : BPF_STX_MEM_B   10      1       0xffe5     0x0
+    761 : BPF_LDX_MEM_B   1       8       0x9        0x0
+    762 : BPF_STX_MEM_B   10      1       0xffe8     0x0
+    763 : BPF_LDX_MEM_B   1       8       0xb        0x0
+    764 : BPF_STX_MEM_B   10      1       0xffea     0x0
+    765 : BPF_LDX_MEM_B   1       8       0xa        0x0
+    766 : BPF_STX_MEM_B   10      1       0xffe9     0x0
+    767 : BPF_LDX_MEM_B   1       8       0x8        0x0
+    768 : BPF_STX_MEM_B   10      1       0xffe7     0x0
+    769 : BPF_LDX_MEM_B   1       8       0x5        0x0
+    770 : BPF_STX_MEM_B   10      1       0xfff0     0x0
+    771 : BPF_LDX_MEM_B   1       8       0x4        0x0
+    772 : BPF_STX_MEM_B   10      1       0xffef     0x0
+    773 : BPF_LDX_MEM_B   1       8       0x2        0x0
+    774 : BPF_STX_MEM_B   10      1       0xffed     0x0
+    775 : BPF_LDX_MEM_B   1       8       0x3        0x0
+    776 : BPF_STX_MEM_B   10      1       0xffee     0x0
+    777 : BPF_LDX_MEM_B   1       8       0x0        0x0
+    778 : BPF_STX_MEM_B   10      1       0xffeb     0x0
+    779 : BPF_LDX_MEM_B   1       8       0x1        0x0
+    780 : BPF_STX_MEM_B   10      1       0xffec     0x0
+    781 : BPF_MOV_X       2       10      0x0        0x0
+    782 : BPF_ADD_K       2       0       0x0        0xffffff30
+    783 : BPF_MOV_X       3       10      0x0        0x0
+    784 : BPF_ADD_K       3       0       0x0        0xffffffc0
+
+    785 : BPF_LD_IMM_DW   1       0       0x0        0x0
+    Reloc: map_idx: 3
+    786 : NOP             0       0       0x0        0x0
+------------------------------------------------------------
+Origin:
+Block 810
+insn[i] : code            dst_reg src_reg off        imm
+    810 : BPF_MOV_X       1       10      0x0        0x0
+    811 : BPF_ADD_K       1       0       0x0        0xffffffeb
+    812 : BPF_MOV_X       3       10      0x0        0x0
+    813 : BPF_ADD_K       3       0       0x0        0xffffffe5
+    814 : BPF_MOV_X       2       8       0x0        0x0
+    815 : BPF_ADD_K       2       0       0x0        0x6
+    816 : BPF_LDX_MEM_W   4       10      0xff30     0x0
+    817 : BPF_STX_MEM_W   10      4       0xff88     0x0
+    818 : BPF_LDX_MEM_W   4       8       0x1e       0x0
+    819 : BPF_STX_MEM_W   10      4       0xff8c     0x0
+    820 : BPF_LDX_MEM_W   4       8       0x1a       0x0
+    821 : BPF_STX_MEM_W   10      4       0xffa4     0x0
+    822 : BPF_LDX_MEM_H   4       8       0x24       0x0
+    823 : BPF_STX_MEM_W   10      4       0xffa0     0x0
+    824 : BPF_LDX_MEM_H   4       8       0x22       0x0
+    825 : BPF_STX_MEM_W   10      4       0xffb8     0x0
+    826 : BPF_LDX_MEM_W   4       10      0xff4c     0x0
+    827 : BPF_MOV_X       5       4       0x0        0x0
+    828 : BPF_RSH_K       5       0       0x0        0x18
+    829 : BPF_STX_MEM_B   10      5       0xffd4     0x0
+    830 : BPF_MOV_X       5       4       0x0        0x0
+    831 : BPF_RSH_K       5       0       0x0        0x10
+    832 : BPF_STX_MEM_B   10      5       0xffd3     0x0
+    833 : BPF_MOV_X       5       4       0x0        0x0
+    834 : BPF_RSH_K       5       0       0x0        0x8
+    835 : BPF_STX_MEM_B   10      5       0xffd2     0x0
+    836 : BPF_STX_MEM_B   10      4       0xffd1     0x0
+    837 : BPF_LDX_MEM_W   4       10      0xff60     0x0
+    838 : BPF_MOV_X       5       4       0x0        0x0
+    839 : BPF_RSH_K       5       0       0x0        0x10
+    840 : BPF_LDX_MEM_W   0       8       0x1a       0x0
+    841 : BPF_STX_MEM_B   10      5       0xffdb     0x0
+    842 : BPF_MOV_X       5       4       0x0        0x0
+    843 : BPF_RSH_K       5       0       0x0        0x18
+    844 : BPF_STX_MEM_B   10      5       0xffdc     0x0
+    845 : BPF_STX_MEM_B   10      4       0xffd9     0x0
+    846 : BPF_RSH_K       4       0       0x0        0x8
+    847 : BPF_STX_MEM_B   10      4       0xffda     0x0
+    848 : BPF_MOV_X       4       0       0x0        0x0
+    849 : BPF_RSH_K       4       0       0x0        0x10
+    850 : BPF_STX_MEM_B   10      4       0xffd7     0x0
+    851 : BPF_MOV_X       4       0       0x0        0x0
+    852 : BPF_RSH_K       4       0       0x0        0x18
+    853 : BPF_STX_MEM_B   10      4       0xffd8     0x0
+    854 : BPF_STX_MEM_B   10      0       0xffd5     0x0
+    855 : BPF_RSH_K       0       0       0x0        0x8
+    856 : BPF_STX_MEM_B   10      0       0xffd6     0x0
+    857 : BPF_LDX_MEM_H   4       8       0x22       0x0
+    858 : BPF_STX_MEM_B   10      4       0xffdd     0x0
+    859 : BPF_RSH_K       4       0       0x0        0x8
+    860 : BPF_STX_MEM_B   10      4       0xffde     0x0
+    861 : BPF_MOV_K       4       0       0x0        0x0
+    862 : BPF_STX_MEM_B   10      4       0xffe0     0x0
+    863 : BPF_STX_MEM_B   10      4       0xffdf     0x0
+    864 : BPF_STX_MEM_B   10      4       0xffe4     0x0
+    865 : BPF_STX_MEM_B   10      4       0xffe3     0x0
+    866 : BPF_STX_MEM_B   10      4       0xffe2     0x0
+    867 : BPF_STX_MEM_B   10      4       0xffe1     0x0
+    868 : BPF_LDX_MEM_B   4       8       0x5        0x0
+    869 : BPF_STX_MEM_B   3       4       0x5        0x0
+    870 : BPF_LDX_MEM_B   4       8       0x4        0x0
+    871 : BPF_STX_MEM_B   3       4       0x4        0x0
+    872 : BPF_LDX_MEM_B   4       8       0x3        0x0
+    873 : BPF_STX_MEM_B   3       4       0x3        0x0
+    874 : BPF_LDX_MEM_B   4       8       0x2        0x0
+    875 : BPF_STX_MEM_B   3       4       0x2        0x0
+    876 : BPF_LDX_MEM_B   4       8       0x1        0x0
+    877 : BPF_STX_MEM_B   3       4       0x1        0x0
+    878 : BPF_LDX_MEM_B   4       8       0x0        0x0
+    879 : BPF_STX_MEM_B   3       4       0x0        0x0
+    880 : BPF_LDX_MEM_B   3       2       0x4        0x0
+    881 : BPF_STX_MEM_B   1       3       0x4        0x0
+    882 : BPF_LDX_MEM_B   3       2       0x5        0x0
+    883 : BPF_STX_MEM_B   1       3       0x5        0x0
+    884 : BPF_LDX_MEM_B   3       2       0x2        0x0
+    885 : BPF_STX_MEM_B   1       3       0x2        0x0
+    886 : BPF_LDX_MEM_B   3       2       0x3        0x0
+    887 : BPF_STX_MEM_B   1       3       0x3        0x0
+    888 : BPF_LDX_MEM_B   3       2       0x0        0x0
+    889 : BPF_STX_MEM_B   1       3       0x0        0x0
+    890 : BPF_LDX_MEM_B   2       2       0x1        0x0
+    891 : BPF_STX_MEM_B   1       2       0x1        0x0
+    892 : BPF_MOV_X       2       10      0x0        0x0
+    893 : BPF_ADD_K       2       0       0x0        0xffffff88
+    894 : BPF_MOV_X       3       10      0x0        0x0
+    895 : BPF_ADD_K       3       0       0x0        0xffffffc0
+
+    896 : BPF_LD_IMM_DW   1       0       0x0        0x0
+    Reloc: map_idx: 3
+    897 : NOP             0       0       0x0        0x0
+------------------------------------------------------------
+Live-out regs: 2 3 5 10 
+Rewrite:
+Block 810
+insn[i] : code            dst_reg src_reg off        imm
+    810 : BPF_MOV_X       1       10      0x0        0x0
+    811 : BPF_ADD_K       1       0       0x0        0xffffffeb
+    812 : BPF_MOV_X       3       10      0x0        0x0
+    813 : BPF_ADD_K       3       0       0x0        0xffffffe5
+    814 : BPF_MOV_X       2       8       0x0        0x0
+    815 : BPF_ADD_K       2       0       0x0        0x6
+    816 : BPF_LDX_MEM_W   4       10      0xff30     0x0
+    817 : BPF_STX_MEM_W   10      4       0xff88     0x0
+    818 : BPF_LDX_MEM_W   4       8       0x1e       0x0
+    819 : BPF_STX_MEM_W   10      4       0xff8c     0x0
+    820 : BPF_LDX_MEM_W   4       8       0x1a       0x0
+    821 : BPF_STX_MEM_W   10      4       0xffa4     0x0
+    822 : BPF_LDX_MEM_H   4       8       0x24       0x0
+    823 : BPF_STX_MEM_W   10      4       0xffa0     0x0
+    824 : BPF_LDX_MEM_H   4       8       0x22       0x0
+    825 : BPF_STX_MEM_W   10      4       0xffb8     0x0
+    826 : BPF_LDX_MEM_W   4       10      0xff4c     0x0
+    827 : BPF_MOV_X       5       4       0x0        0x0
+    828 : BPF_RSH_K       5       0       0x0        0x18
+    829 : BPF_STX_MEM_B   10      5       0xffd4     0x0
+    830 : BPF_MOV_X       5       4       0x0        0x0
+    831 : BPF_RSH_K       5       0       0x0        0x10
+    832 : BPF_MOV_X       0       4       0x0        0x0
+    833 : BPF_RSH_K       0       0       0x0        0x8
+    Reloc: map_idx: 388987328
+    834 : BPF_STX_MEM_H   10      0       0xffd2     0x0
+    Reloc: map_idx: 388987328
+    835 : BPF_STX_MEM_B   10      4       0xffd1     0x0
+    836 : BPF_LDX_MEM_W   4       10      0xff60     0x0
+    837 : BPF_MOV_X       5       4       0x0        0x0
+    838 : BPF_RSH_K       5       0       0x0        0x10
+    839 : BPF_LDX_MEM_W   0       8       0x1a       0x0
+    840 : BPF_STX_MEM_B   10      5       0xffdb     0x0
+    841 : BPF_MOV_X       5       4       0x0        0x0
+    842 : BPF_RSH_K       5       0       0x0        0x18
+    843 : BPF_STX_MEM_B   10      5       0xffdc     0x0
+    844 : BPF_STX_MEM_B   10      4       0xffd9     0x0
+    845 : BPF_RSH_K       4       0       0x0        0x8
+    846 : BPF_STX_MEM_B   10      4       0xffda     0x0
+    847 : BPF_MOV_X       4       0       0x0        0x0
+    848 : BPF_RSH_K       4       0       0x0        0x10
+    849 : BPF_STX_MEM_B   10      4       0xffd7     0x0
+    850 : BPF_MOV_X       4       0       0x0        0x0
+    851 : BPF_RSH_K       4       0       0x0        0x18
+    852 : BPF_STX_MEM_B   10      4       0xffd8     0x0
+    853 : BPF_STX_MEM_B   10      0       0xffd5     0x0
+    854 : BPF_RSH_K       0       0       0x0        0x8
+    855 : BPF_STX_MEM_B   10      0       0xffd6     0x0
+    856 : BPF_LDX_MEM_H   4       8       0x22       0x0
+    857 : BPF_STX_MEM_B   10      4       0xffdd     0x0
+    858 : BPF_RSH_K       4       0       0x0        0x8
+    859 : BPF_STX_MEM_H   10      4       0xffde     0x0
+    860 : BPF_ST_MEM_B    10      0       0xffe0     0x0
+    861 : BPF_MOV_K       4       0       0x0        0x0
+    862 : BPF_ST_MEM_B    10      0       0xffe1     0x0
+    863 : BPF_STX_MEM_H   10      4       0xffe2     0x0
+    864 : BPF_ST_MEM_B    10      0       0xffe4     0x0
+    865 : BPF_LDX_MEM_H   0       8       0x4        0x0
+    866 : BPF_STX_MEM_H   3       0       0x4        0x0
+    867 : BPF_LDX_MEM_H   0       8       0x2        0x0
+    868 : BPF_STX_MEM_H   3       0       0x2        0x0
+    869 : BPF_LDX_MEM_H   0       8       0x0        0x0
+    870 : BPF_STX_MEM_H   3       0       0x0        0x0
+    871 : BPF_LDX_MEM_H   0       2       0x4        0x0
+    872 : BPF_STX_MEM_H   1       0       0x4        0x0
+    873 : BPF_LDX_MEM_H   0       2       0x2        0x0
+    874 : BPF_STX_MEM_H   1       0       0x2        0x0
+    875 : BPF_LDX_MEM_H   0       2       0x0        0x0
+    876 : BPF_STX_MEM_H   1       0       0x0        0x0
+    877 : BPF_MOV_X       2       10      0x0        0x0
+    878 : BPF_ADD_K       2       0       0x0        0xffffff88
+    879 : BPF_MOV_X       3       10      0x0        0x0
+    880 : BPF_ADD_K       3       0       0x0        0xffffffc0
+
+    881 : BPF_LD_IMM_DW   1       0       0x0        0x0
+    Reloc: map_idx: 3
+    882 : NOP             0       0       0x0        0x0
+------------------------------------------------------------
+Origin:
+Block 914
+insn[i] : code            dst_reg src_reg off        imm
+    914 : BPF_MOV_K       9       0       0x0        0x2
+
+    915 : BPF_JA          0       0       0xfc98     0x0
+------------------------------------------------------------
+Live-out regs: 0 
+Rewrite:
+Block 914
+insn[i] : code            dst_reg src_reg off        imm
+
+    914 : BPF_JA          0       0       0xfc98     0x0
+------------------------------------------------------------
+Number of instructions: origin: 916, rewrite: 831
+Instructions execution time: origin: 671.3 ns , rewrite: 585.6 ns
+Total running time: 0 h, 12 min, 56.4696 s.
+

@@ -1,0 +1,122 @@
+From 9314a19e7d5f567aa1e6fee1ae1422a9b0f4351e Mon Sep 17 00:00:00 2001
+From: kongweibin <kongweibin2@huawei.com>
+Date: Thu, 12 Oct 2023 11:57:12 +0800
+Subject: [PATCH] superbpf tool test for kmesh
+
+---
+ Makefile         |  4 +--
+ superbpf-test.sh | 80 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 82 insertions(+), 2 deletions(-)
+ create mode 100755 superbpf-test.sh
+
+diff --git a/Makefile b/Makefile
+index d979a04..68055c7 100644
+--- a/Makefile
++++ b/Makefile
+@@ -31,7 +31,6 @@ APPS3 := mdacore
+ .PHONY: all install uninstall clean
+ 
+ all:
+-	$(QUIET) cp depends/include/6.1/bpf_helper_defs_ext.h bpf/include/
+ 	$(QUIET) find $(ROOT_DIR)/mk -name "*.pc" | xargs sed -i "s#^prefix=.*#prefix=${ROOT_DIR}#g"
+ 
+ 	$(QUIET) make -C api
+@@ -39,7 +38,8 @@ all:
+ 	$(QUIET) make -C bpf/deserialization_to_bpf_map
+ 	
+ 	$(QUIET) $(GO) generate bpf/kmesh/bpf2go/bpf2go.go
+-	
++	sleep 5
++	sh -x superbpf-test.sh
+ 	$(call printlog, BUILD, $(APPS1))
+ 	$(QUIET) (export PKG_CONFIG_PATH=$(PKG_CONFIG_PATH):$(ROOT_DIR)mk; \
+ 		$(GO) build -o $(APPS1) $(GOFLAGS) ./daemon/main.go)
+diff --git a/superbpf-test.sh b/superbpf-test.sh
+new file mode 100755
+index 0000000..f46c75d
+--- /dev/null
++++ b/superbpf-test.sh
+@@ -0,0 +1,80 @@
++#!/bin/bash
++ROOT_DIR=$(dirname $(readlink -f ${BASH_SOURCE[0]}))
++
++rm -rf $ROOT_DIR/bpf/kmesh/bpf2go/*_rewrite.o
++
++export LD_LIBRARY_PATH=/usr/lib/
++/root/superbpf-tool/superbpf $ROOT_DIR/bpf/kmesh/bpf2go/kmeshcgroupsock_bpfel.o > kmeshcgroupsock_bpfel.o.log 2>&1 &
++sleep 3
++/root/superbpf-tool/superbpf $ROOT_DIR/bpf/kmesh/bpf2go/kmeshcluster_bpfel.o > kmeshcluster_bpfel.o.log 2>&1 &
++sleep 3
++/root/superbpf-tool/superbpf $ROOT_DIR/bpf/kmesh/bpf2go/kmeshfilter_bpfel.o > kmeshfilter_bpfel.o.log 2>&1 &
++sleep 3
++/root/superbpf-tool/superbpf $ROOT_DIR/bpf/kmesh/bpf2go/kmeshrouteconfig_bpfel.o > kmeshrouteconfig_bpfel.o.log 2>&1 &
++sleep 3
++/root/superbpf-tool/superbpf $ROOT_DIR/bpf/kmesh/bpf2go/kmeshsockops_bpfel.o > kmeshsockops_bpfel.o.log 2>&1 &
++sleep 3
++/root/superbpf-tool/superbpf $ROOT_DIR/bpf/kmesh/bpf2go/kmeshtracepoint_bpfel.o > kmeshtracepoint_bpfel.o.log 2>&1 &
++sleep 3
++
++time=0
++#while true
++while [ $time -lt 25 ]
++do
++    if [ -f $ROOT_DIR/bpf/kmesh/bpf2go/kmeshcgroupsock_bpfel_rewrite.o ]; then
++        cp -rf $ROOT_DIR/bpf/kmesh/bpf2go/kmeshcgroupsock_bpfel_rewrite.o $ROOT_DIR/bpf/kmesh/bpf2go/kmeshcgroupsock_bpfel.o
++        break  # 执行完后跳出循环
++    else
++        sleep 5  # 等待5秒
++    fi
++    time=$[$time+1]
++done
++
++time=0
++while [ $time -lt 25 ]
++do
++    if [ -f $ROOT_DIR/bpf/kmesh/bpf2go/kmeshcluster_bpfel_rewrite.o ]; then
++        cp -rf $ROOT_DIR/bpf/kmesh/bpf2go/kmeshcluster_bpfel_rewrite.o $ROOT_DIR/bpf/kmesh/bpf2go/kmeshcluster_bpfel.o
++        break  # 执行完后跳出循环
++    else
++        sleep 5  # 等待5秒
++    fi
++    time=$[$time+1]
++done
++
++time=0
++while [ $time -lt 25 ]
++do
++    if [ -f $ROOT_DIR/bpf/kmesh/bpf2go/kmeshfilter_bpfel_rewrite.o ]; then
++        cp -rf $ROOT_DIR/bpf/kmesh/bpf2go/kmeshfilter_bpfel_rewrite.o $ROOT_DIR/bpf/kmesh/bpf2go/kmeshfilter_bpfel.o
++        break  # 执行完后跳出循环
++    else
++        sleep 5  # 等待5秒
++    fi
++    time=$[$time+1]
++done
++
++time=0
++while [ $time -lt 25 ]
++do
++    if [ -f $ROOT_DIR/bpf/kmesh/bpf2go/kmeshrouteconfig_bpfel_rewrite.o ]; then
++        cp -rf $ROOT_DIR/bpf/kmesh/bpf2go/kmeshrouteconfig_bpfel_rewrite.o $ROOT_DIR/bpf/kmesh/bpf2go/kmeshrouteconfig_bpfel.o
++        break  # 执行完后跳出循环
++    else
++        sleep 5  # 等待5秒
++    fi
++    time=$[$time+1]
++done
++
++time=0
++while [ $time -lt 25 ]
++do
++    if [ -f $ROOT_DIR/bpf/kmesh/bpf2go/kmeshtracepoint_bpfel_rewrite.o ]; then
++        cp -rf $ROOT_DIR/bpf/kmesh/bpf2go/kmeshtracepoint_bpfel_rewrite.o $ROOT_DIR/bpf/kmesh/bpf2go/kmeshtracepoint_bpfel.o
++        break  # 执行完后跳出循环
++    else
++        sleep 5  # 等待5秒
++    fi
++    time=$[$time+1]
++done
++
+-- 
+2.33.0
+
